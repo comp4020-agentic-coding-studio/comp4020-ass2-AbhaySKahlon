@@ -31,11 +31,13 @@ Keep two different quantities apart from the start:
 - **Clock duration** — what a stopwatch would say. Five minutes is five
   minutes, regardless of who is waiting or how it felt.
 - **Judged duration** — the duration a person reports or produces as their
-  judgement of a wait, whether that judgement is made during the interval or
-  only produced afterwards, in whatever units they'd naturally use ("felt
-  like nothing," "felt like forever," "maybe ten minutes"). It is one part
-  of what makes a wait feel short or unbearable, not the sole determinant of
-  it.
+  estimate of how long a wait took, whether that estimate is made during the
+  interval or only produced afterwards, in whatever unit or comparison
+  they'd naturally reach for ("maybe ten minutes," "about twice as long as
+  it should have been"). It is an estimate of length, not a report of how
+  the wait felt emotionally — that belongs in the log's outcome/notes field,
+  not here. Judged duration is one part of what makes a wait feel short or
+  unbearable, not the sole determinant of it.
 
 The rest of the course is, in one sense, an extended argument about what
 moves judged duration around while clock duration stays fixed.
@@ -46,12 +48,13 @@ There's a second distinction underneath the first, and it matters more than
 it looks. A person can arrive at a duration judgement in two different
 circumstances:
 
-- **Prospectively** — the person knows, before or during the wait, that a
-  duration judgement will be required of them. That forewarning is what
-  makes a judgement prospective — not any particular behaviour during the
-  wait. Someone told in advance they'll be asked how long a wait took is
-  making a prospective judgement whether they spend it checking a phone,
-  reading, or staring at nothing.
+- **Prospectively** — the person has been forewarned, before the wait
+  begins, that a duration judgement of it will be required. That forewarning
+  is what defines the prospective paradigm — not any particular behaviour
+  during the wait. Someone forewarned is making a prospective judgement
+  whether they spend the wait checking a phone, reading, or staring at
+  nothing; watching a clock doesn't make a judgement prospective, and not
+  watching one doesn't make it retrospective.
 - **Retrospectively** — the person was not forewarned. No duration
   judgement was anticipated while the wait was happening; the estimate is
   only produced once asked, afterwards, and has to be reconstructed from
@@ -59,32 +62,40 @@ circumstances:
   meeting ran?", asked the next day with no warning it was coming, is a
   retrospective question.
 
-These aren't two measurement techniques for the same underlying thing — the
-evidence is that they draw on different cognitive processes. Block and
-Zakay's meta-analytic review of twenty experiments on this distinction found
-that prospective judgements come out longer, and more consistent from
-person to person, than retrospective judgements of an equivalent duration;
-they argue this fits an *attentional* account of prospective judgement (you
-are, in effect, monitoring a mental clock, and monitoring takes attention
-away from everything else) against a *memory-based* account of retrospective
-judgement (you have no running record, so you reconstruct an estimate from
-whatever you can recall about the wait afterwards) ([Block & Zakay,
-1997](https://doi.org/10.3758/BF03209393)).
+These are two different experimental paradigms, defined only by that
+forewarning — not two ways of describing the same measurement.
+
+**The empirical finding.** Block and Zakay's meta-analytic review of twenty
+experiments comparing the two paradigms found that prospective judgements
+come out longer, and less variable from person to person, than retrospective
+judgements of an equivalent duration ([Block & Zakay,
+1997](https://doi.org/10.3758/BF03209393)). That is a pattern found across
+those studies, not something forewarning mechanically produces in any single
+case: the size of the difference varies, and other factors — starting with
+how much attention the wait itself demands of the person — can narrow,
+widen, or in some conditions reverse it. That moderation by attentional or
+information-processing demand is next week's problem, not this one; for now,
+treat the finding as a documented tendency, not a formula.
+
+**Their interpretation**, offered as an explanation for that finding rather
+than as an established fact on its own: an *attentional* account of
+prospective judgement (forewarning invites monitoring something like a
+mental clock, which competes with whatever attention the rest of the wait
+would otherwise get) against a *memory-based* account of retrospective
+judgement (there is no running record, so the estimate has to be
+reconstructed afterwards from whatever can be recalled about the wait).
 
 Two things follow, and both matter for how you'll use this course's central
 method:
 
 1. Whether a person was forewarned that a duration judgement would be
-   needed isn't a neutral detail — it determines whether they're doing
-   prospective, attention-based monitoring or retrospective, memory-based
-   reconstruction, and those produce systematically different numbers.
-2. This is a documented pattern across many experiments, not a fixed rule
-   that applies identically to every wait. What else the person is doing —
-   how much attention the wait itself demands — shifts the size, and
-   sometimes the direction, of the gap. That's next week's problem, not this
-   one; for now, the point is only that the distinction exists, and that
-   forewarning, not behaviour during the wait, is what separates a
-   prospective judgement from a retrospective one.
+   needed isn't a neutral detail — it's what determines which paradigm
+   applies, and the two paradigms produce systematically different numbers.
+2. Forewarning, not behaviour during the wait, is what separates a
+   prospective judgement from a retrospective one. Two people can spend an
+   identical wait doing identical things and still be in different
+   paradigms, if only one of them knew in advance they'd be asked to judge
+   it.
 
 ## Why this matters
 

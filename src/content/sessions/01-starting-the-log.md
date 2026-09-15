@@ -45,11 +45,11 @@ even when the honest answer is "none" or "didn't notice":
 | Context | What kind of wait this was, in enough detail to remember it later (e.g. "waiting for a bus," "on hold with a phone provider") — no need for exact location or time |
 | Expected wait | What you thought the wait would be before it started, if you had any expectation at all |
 | Clock duration | How long the wait actually took, as close as you can measure it |
-| Judged duration | Your own estimate of how long it felt, in your own words or units |
-| Prospective or retrospective | Whether you knew, before or during the wait, that you'd be asked to judge its duration (prospective), or weren't forewarned and only produced the judgement afterwards (retrospective) — this depends on what you knew going in, not on what you did during the wait |
+| Judged duration | Your own estimate of the wait's length — a duration, not how it felt about it — in your own words or units (e.g. "maybe six minutes," "about twice as long as it should have been") |
+| Prospective or retrospective | Whether you were forewarned, before the wait began, that you'd be asked to judge its duration (prospective), or received no such warning and only decided to produce a judgement once the wait was over (retrospective) — this depends only on the forewarning, not on what you did during the wait |
 | Attending to | What you were actually doing or looking at for most of the wait |
 | Available information | Anything you were told or shown about the wait's likely length (a countdown, a queue position, nothing at all) |
-| Outcome / notes | Anything else worth remembering about how the wait ended or how it felt |
+| Outcome / notes | Anything else worth remembering about how the wait ended or how it felt — this is where an emotional reaction belongs, not in judged duration |
 
 **A worked example** (a model entry to show the format, not a real
 observation):
@@ -67,6 +67,32 @@ observation):
 > judgement even doing exactly the same thing. Available information: none
 > — no indicator light, no timer. Outcome/notes: annoyed by the end, even
 > though four minutes is short by any other measure.
+
+## Getting a genuine prospective entry, and a genuine retrospective one
+
+Your log needs at least one honest entry of each kind, and they come from
+setting the wait up differently, not from labelling the same kind of wait
+two different ways after the fact:
+
+- **For a retrospective entry**, pick an ordinary wait you didn't think
+  about recording until after it was already over — you weren't forewarned,
+  because nothing, including you, decided in advance that this wait would
+  be judged. Only once it ended did you think back and produce an estimate.
+- **For a prospective entry**, pick a wait you already knew was coming (a
+  kettle, a bus, a queue you're about to join) and, *before it starts*,
+  decide that you're going to judge how long it takes. Deciding this
+  yourself, in advance, is enough to count as forewarning — nobody else has
+  to tell you.
+
+Note the forewarning itself in the entry, not just the prospective or
+retrospective label — a short phrase like "decided beforehand" or "only
+thought to log this afterwards" is enough. And don't pick which waits to
+log in order to produce a particular result: if the one genuinely
+prospective wait you get to this week happens to feel short, and the one
+genuinely retrospective wait happens to feel long, log that. The point of
+the pair is an honest comparison, not a demonstration of the lecture's
+finding — a personal log of two entries can't establish that finding either
+way.
 
 ## In the session
 
