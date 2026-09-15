@@ -1,0 +1,91 @@
+---
+title: Starting the wait-observation log
+description:
+  Setting up the personal log you'll keep and reinterpret all semester, and
+  making your first entries against it.
+week: 1
+date: 2027-02-22
+tags:
+  - time
+teachers:
+  - idris-fenn
+spec:
+  - you have logged at least three ordinary waits since the session, each
+    with a clock duration and a judged duration
+  - at least one entry is marked prospective and at least one is marked
+    retrospective, honestly (not assigned to make the set look balanced)
+  - each entry names what you were attending to during or after the wait,
+    and what information, if any, was available to you about how long it
+    would be
+  - none of your entries record anything identifying about another person
+related:
+  - lectures/week-01
+---
+
+This session sets up the one instrument the whole course runs on: a
+wait-observation log you keep yourself, add to every week, and reread with a
+different question each time. Week 1's job is just to get it started
+correctly, because a log with a sloppy first week is harder to use in Week
+4 than an empty one.
+
+## Before the session
+
+Read the [Week 1 lecture](/lectures/week-01/) first — the log only makes
+sense once you've separated clock duration from judged duration, and
+prospective judgement from retrospective judgement. Nothing to prepare
+beyond that; the lecture is the full prerequisite.
+
+## The log format
+
+Log one row per wait. Every entry needs these fields — leave nothing out,
+even when the honest answer is "none" or "didn't notice":
+
+| Field | What goes in it |
+|---|---|
+| Context | What kind of wait this was, in enough detail to remember it later (e.g. "waiting for a bus," "on hold with a phone provider") — no need for exact location or time |
+| Expected wait | What you thought the wait would be before it started, if you had any expectation at all |
+| Clock duration | How long the wait actually took, as close as you can measure it |
+| Judged duration | Your own estimate of how long it felt, in your own words or units |
+| Prospective or retrospective | Whether you were aware, *during* the wait, that you'd be estimating it afterwards (prospective), or only formed the estimate once it was over (retrospective) |
+| Attending to | What you were actually doing or looking at for most of the wait |
+| Available information | Anything you were told or shown about the wait's likely length (a countdown, a queue position, nothing at all) |
+| Outcome / notes | Anything else worth remembering about how the wait ended or how it felt |
+
+**A worked example** (a model entry to show the format, not a real
+observation):
+
+> Context: waiting for a kettle to boil. Expected wait: "a few minutes."
+> Clock duration: 4 minutes. Judged duration: "felt like at least six or
+> seven." Prospective/retrospective: prospective — I was watching the kettle
+> and checking my phone the whole time. Attending to: the kettle, my phone,
+> back and forth. Available information: none — no indicator light, no
+> timer. Outcome/notes: annoyed by the end, even though four minutes is
+> short by any other measure.
+
+## In the session
+
+We go through the format together, each write a first entry from a recent
+wait (even one from earlier today), then compare: who logged a prospective
+judgement, who logged a retrospective one, and whether that changed what
+their "how long did it feel" answer actually meant. This is a working
+session, not a lecture recap — bring something to log, not questions to
+ask.
+
+## What the log is and isn't
+
+This is a personal record for a method you'll use all semester, not a
+scientific study. One person's log, kept for twelve weeks, cannot establish
+that any mechanism *causes* a wait to feel longer or shorter — it can only
+give you concrete cases to test an explanation against, which is exactly
+what Weeks 2 to 4 do. Treat every entry as something you noticed, not
+something you proved.
+
+Two rules, both non-negotiable: don't record anything that would identify a
+stranger involved in your wait (no names, no descriptions specific enough to
+identify someone), and don't log a wait you didn't actually experience.
+
+## Afterwards
+
+Keep the log going — you'll add to it without a formal check-in until the
+Waiting Field Notes assessment in Week 4, which asks you to submit the log
+itself alongside a short written interpretation of what it shows.
