@@ -61,12 +61,11 @@ observation):
 > Prospective/retrospective: retrospective — nothing about the wait told me
 > in advance that I'd be asked how long it took; I only produced an
 > estimate once it was over, when I sat down to write up the log. Attending
-> to: the kettle, my phone, back and forth — that's what filled the four
-> minutes, not what makes this retrospective; someone forewarned they'd be
-> asked to judge the same wait would still be making a *prospective*
-> judgement even doing exactly the same thing. Available information: none
-> — no indicator light, no timer. Outcome/notes: annoyed by the end, even
-> though four minutes is short by any other measure.
+> to: the kettle, my phone, back and forth. That describes what occupied
+> the wait; it does not determine whether the judgement is prospective or
+> retrospective. Available information: none — no indicator light, no
+> timer. Outcome/notes: annoyed by the end, even though four minutes is
+> short by any other measure.
 
 ## Getting a genuine prospective entry, and a genuine retrospective one
 
@@ -78,11 +77,12 @@ two different ways after the fact:
   about recording until after it was already over — you weren't forewarned,
   because nothing, including you, decided in advance that this wait would
   be judged. Only once it ended did you think back and produce an estimate.
-- **For a prospective entry**, pick a wait you already knew was coming (a
-  kettle, a bus, a queue you're about to join) and, *before it starts*,
-  decide that you're going to judge how long it takes. Deciding this
-  yourself, in advance, is enough to count as forewarning — nobody else has
-  to tell you.
+- **For a prospective-style entry**, choose a wait you are already going to
+  experience (a kettle, a bus, a queue you're about to join) and decide
+  before it begins that you will judge its duration. This gives you the
+  same kind of forewarning that defines the prospective paradigm in
+  experimental research, although your personal log is not a laboratory
+  replication.
 
 Note the forewarning itself in the entry, not just the prospective or
 retrospective label — a short phrase like "decided beforehand" or "only

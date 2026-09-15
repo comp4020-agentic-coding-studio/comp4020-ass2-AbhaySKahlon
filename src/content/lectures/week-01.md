@@ -40,7 +40,8 @@ Keep two different quantities apart from the start:
   unbearable, not the sole determinant of it.
 
 The rest of the course is, in one sense, an extended argument about what
-moves judged duration around while clock duration stays fixed.
+can change the experience and judgement of a wait without simply changing
+the time that passes.
 
 ## When the judgement is made changes what it measures
 
