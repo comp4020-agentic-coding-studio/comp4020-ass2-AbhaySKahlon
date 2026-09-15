@@ -2,6 +2,7 @@
 import Card from "astro-theme-university/components/Card.astro";
 import CardGrid from "astro-theme-university/components/CardGrid.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import { withBase } from "astro-theme-university/url";
 import { courseMeta } from "../course-config";
 import { sessionLabels, siteConfig } from "../site-config";
 
@@ -17,6 +18,46 @@ const mechanisms = [
   "value",
   "control",
 ];
+
+// Derived from courseMeta, not restated — the ANU convention this course
+// borrows (course-config.ts) is that 1000-4000 is undergraduate, 6000/8000
+// postgraduate.
+const levelLabel = `${courseMeta.level}000-level`;
+const academicCareer = courseMeta.level <= 4 ? "Undergraduate" : "Postgraduate";
+
+const dateFormatter = new Intl.DateTimeFormat("en-AU", {
+  day: "numeric",
+  month: "short",
+  year: "numeric",
+  timeZone: "UTC",
+});
+const teachingPeriod = `${dateFormatter.format(new Date(courseMeta.startDate))} – ${dateFormatter.format(new Date(courseMeta.endDate))}`;
+
+// The planned week-by-week schedule and assessment scheme. Only Week 1 has
+// been authored so far; the rest is the approved architecture, shown here as
+// a schedule rather than as authored session/lecture content.
+const weeklySchedule = [
+  { week: 1, title: "Five Minutes", phase: "Measure" },
+  { week: 2, title: "Watching the Clock", phase: "Explain" },
+  { week: 3, title: "How Long Did You Expect?", phase: "Explain" },
+  { week: 4, title: "Tell Me Where I Stand", phase: "Explain" },
+  { week: 5, title: "The Progress Bar", phase: "Analyse" },
+  { week: 6, title: "The Room", phase: "Analyse" },
+  { week: 7, title: "Who Goes Next?", phase: "Analyse" },
+  { week: 8, title: "Who Doesn't Have to Wait?", phase: "Analyse" },
+  { week: 9, title: "The Useful Wait", phase: "Analyse" },
+  { week: 10, title: "Break the Wait", phase: "Experiment" },
+  { week: 11, title: "Who Owns the Wait?", phase: "Experiment" },
+  { week: 12, title: "The Waiting Audit", phase: "Audit" },
+];
+
+const plannedAssessments = [
+  { name: "Waiting Field Notes", weight: 15, dueWeek: 4 },
+  { name: "Queue Case Study", weight: 20, dueWeek: 9 },
+  { name: "Waiting Experiment", weight: 25, dueWeek: 10 },
+  { name: "Waiting Audit", weight: 40, dueWeek: 12 },
+];
+const totalWeight = plannedAssessments.reduce((sum, a) => sum + a.weight, 0);
 ---
 
 <ContentLayout
@@ -30,22 +71,115 @@ const mechanisms = [
 
   <p class="thesis">Waiting is an experience, not merely a duration.</p>
 
-  <h2>What you will do</h2>
+  <h2>Course at a glance</h2>
+  <dl class="at-a-glance">
+    <dt>Course code</dt>
+    <dd>{courseMeta.code}</dd>
+    <dt>Course level</dt>
+    <dd>{levelLabel}</dd>
+    <dt>Academic career</dt>
+    <dd>{academicCareer}</dd>
+    <dt>Unit value</dt>
+    <dd>6 units — SlopU's standard single-semester load</dd>
+    <dt>Teaching mode</dt>
+    <dd>In person — one weekly lecture and one weekly session</dd>
+    <dt>Semester</dt>
+    <dd>{courseMeta.session}, {courseMeta.year}</dd>
+    <dt>Duration</dt>
+    <dd>12 teaching weeks ({teachingPeriod})</dd>
+    <dt>Weekly class time</dt>
+    <dd>1-hour lecture, 2-hour session</dd>
+    <dt>Workload</dt>
+    <dd>About 8–10 hours a week, including the wait-observation log</dd>
+    <dt>Prerequisites</dt>
+    <dd>None</dd>
+    <dt>Assumed knowledge</dt>
+    <dd>None beyond an ordinary experience of waiting for things</dd>
+    <dt>Incompatibilities</dt>
+    <dd>None</dd>
+  </dl>
+
+  <h2>How this course works</h2>
   <p>
-    In Week 1 you start a wait-observation log — timing an ordinary wait
-    against how long it felt — and keep adding to it all semester. The weeks
-    that follow use that log, and the mechanisms below, to move from
-    measuring a wait, to explaining why it felt the way it did, to analysing
-    designed waits, to running one small experiment of your own, and finally
-    to auditing a real waiting system and proposing what you'd change. You
-    leave with that audit, and a log you can point to for every claim in it.
+    Every week pairs one lecture with one {sessionLabels.singular.toLowerCase()},
+    tagged with a single mechanism from the ten below, and every week feeds
+    the same instrument: a wait-observation log each student starts in Week 1
+    and keeps adding to all semester. Weeks 2–4 reread that log through a new
+    explanatory mechanism rather than introducing an unrelated topic each
+    time; weeks 5–9 do the same with matched pairs of designed and social
+    waits. Nothing here is meant to be read on its own.
+  </p>
+  <p>
+    The four assessments follow that same shape instead of sitting outside
+    it: Waiting Field Notes hands in the log itself with an interpretation;
+    Queue Case Study reads one real system through the weeks that led up to
+    it; Waiting Experiment changes one mechanism and measures the result
+    with Week 1's method; Waiting Audit uses everything built across the
+    semester on one real system. Each is only gradable because of the weeks
+    before it.
   </p>
 
+  <h2>The ten mechanisms</h2>
   <p>
     The course studies ten mechanisms that shape a wait — {mechanisms.join(", ")}
     — one per week. That list is a teaching structure this course has chosen,
     not a settled or exhaustive scientific classification of why waiting feels
     different; treat it as ten angles worth checking, not ten laws.
+  </p>
+
+  <h2>The course journey</h2>
+  <p class="phase-line">Measure → Explain → Analyse → Experiment → Audit</p>
+  <p>
+    The whole semester before you have to open each week's page individually:
+  </p>
+  <table class="schedule">
+    <thead>
+      <tr>
+        <th scope="col">Week</th>
+        <th scope="col">Title</th>
+        <th scope="col">Phase</th>
+      </tr>
+    </thead>
+    <tbody>
+      {weeklySchedule.map((w) => (
+        <tr>
+          <td>{w.week}</td>
+          <td>
+            {w.week === 1 ? <a href={withBase("/lectures/week-01/")}>{w.title}</a> : w.title}
+          </td>
+          <td>{w.phase}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+
+  <h2>Assessment overview</h2>
+  <table class="assessment-overview">
+    <thead>
+      <tr>
+        <th scope="col">Assessment</th>
+        <th scope="col">Weight</th>
+        <th scope="col">Due</th>
+      </tr>
+    </thead>
+    <tbody>
+      {plannedAssessments.map((a) => (
+        <tr>
+          <td>{a.name}</td>
+          <td>{a.weight}%</td>
+          <td>Week {a.dueWeek}</td>
+        </tr>
+      ))}
+      <tr class="total-row">
+        <td>Total</td>
+        <td>{totalWeight}%</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    These are the semester's fixed weightings; each brief is published in
+    full as its week is reached.
   </p>
 
   <h2>Who it is for</h2>
@@ -98,5 +232,48 @@ const mechanisms = [
     border-left: 3px solid var(--at-bg-alt);
     padding-inline-start: 1rem;
     margin-block-end: 2rem;
+  }
+
+  .at-a-glance {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.35rem 1.5rem;
+    margin-block-end: 2rem;
+  }
+
+  .at-a-glance dt {
+    font-weight: 600;
+    color: var(--at-text-secondary);
+  }
+
+  .at-a-glance dd {
+    margin: 0;
+  }
+
+  .phase-line {
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  table.schedule,
+  table.assessment-overview {
+    width: 100%;
+    border-collapse: collapse;
+    margin-block-end: 1rem;
+  }
+
+  table.schedule th,
+  table.schedule td,
+  table.assessment-overview th,
+  table.assessment-overview td {
+    padding: 0.4rem 0.6rem;
+    text-align: left;
+    border-bottom: 1px solid var(--at-bg-alt);
+  }
+
+  table.assessment-overview .total-row td {
+    font-weight: 600;
+    border-top: 2px solid var(--at-text-secondary);
+    border-bottom: none;
   }
 </style>
