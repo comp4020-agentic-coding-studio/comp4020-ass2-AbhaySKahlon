@@ -55,27 +55,30 @@ length, while **retrospective** judgements of an equally demanding wait came
 out longer relative to it. The same increase in demand pushed the two
 paradigms' estimates in opposite directions, not the same one.
 
-That's broadly consistent with the two accounts Week 1 introduced. Someone
-forewarned and occupied by a demanding task has less attention left over to
-track time passing, so whatever internal sense of duration they're building
-runs behind — judged shorter. Someone not forewarned, reconstructing a
-judgement afterwards from memory, has more to remember from a demanding wait
-than an idle one — more material to reconstruct a duration from — judged
-longer. Neither account claims occupation shortens a wait outright; both make
-its effect depend on which paradigm the judgement came from, and the size of
-either effect varies across the pooled studies rather than landing on one
-number.
+That's broadly consistent with the two accounts Week 1 introduced. One
+attentional account of the prospective side holds that someone forewarned
+and occupied by a demanding task has less attention left over to track time
+passing, so whatever internal sense of duration they're building runs
+behind — judged shorter. One memory-based account of the retrospective side
+holds that a more demanding interval leaves more contextual information to
+be retrieved when the duration is judged afterwards, which can contribute to
+a longer retrospective estimate. Both are theoretical interpretations of the
+finding, not findings in their own right; neither claims occupation
+shortens a wait outright, both make its effect depend on which paradigm the
+judgement came from, and the size of either effect varies across the pooled
+studies rather than landing on one number.
 
 ## Reading Maister against the finding
 
-Put the two together and Maister's proposition turns out to describe roughly
-half of what's actually going on. "Occupied time feels shorter" tracks the
-prospective side of the finding reasonably well — someone forewarned and kept
-busy plausibly does judge the wait as shorter. It doesn't obviously extend to
-a retrospective wait, where being occupied can make the same interval loom
-larger once you look back on it, not smaller. A rule of thumb built by
-watching queues from the outside has no reason to have separated these two
-cases; the research asking people to make the judgement themselves does.
+Maister's proposition is a useful practitioner starting point, but it does
+not capture the full pattern found in controlled research. "Occupied time
+feels shorter" tracks the prospective side of the finding reasonably well —
+someone forewarned and kept busy plausibly does judge the wait as shorter.
+It doesn't obviously extend to a retrospective wait, where being occupied
+can make the same interval loom larger once you look back on it, not
+smaller. A rule of thumb built by watching queues from the outside has no
+reason to have separated these two cases; the research asking people to make
+the judgement themselves does.
 
 ## Why this matters
 
@@ -92,8 +95,9 @@ several things that experience depends on.
 
 The session takes this back to your own log: rereading entries you already
 have, asking whether attention plausibly explains a difference between two
-of them, and adding one more entry from a wait with a deliberately different
-attentional condition. One mechanism, checked against a handful of personal
+of them, and adding one more entry from an ordinary wait that naturally
+differs in what occupied your attention. One mechanism, checked against a
+handful of personal
 entries, still can't prove anything — it can only tell you whether attention
 is consistent with what you've already recorded, which is exactly what
 Week 3 will ask you to check again once expectation is on the table too.

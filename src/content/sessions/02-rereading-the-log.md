@@ -2,7 +2,7 @@
 title: Rereading the log for attention
 description:
   Going back over your Week 1 entries to ask what occupied your attention,
-  then adding one more entry under a deliberately different condition.
+  then adding one more entry from a wait that naturally differs from them.
 week: 2
 date: 2027-03-01
 tags:
@@ -12,9 +12,9 @@ teachers:
 spec:
   - you have reread at least three of your own existing log entries and
     noted, for each, what occupied your attention
-  - you have logged one new entry, in the existing log format, from a wait
-    with a deliberately different attentional condition than one of the
-    entries you reread
+  - you have logged one new entry, in the existing log format, from an
+    ordinary wait that naturally differs in what occupied your attention
+    from at least one of the entries you reread
   - for at least one pair of entries, you can state whether attention
     plausibly explains the difference in judged duration, whether it
     doesn't, or whether the log can't tell
@@ -71,14 +71,18 @@ entries):
 > work, or whether both are — it can only tell you that a difference in
 > attention is consistent with what you're seeing here.
 
-## Logging one more entry, deliberately
+## Logging one more entry, observationally
 
 Add one new entry, in the exact log format from Week 1, from an ordinary
-wait chosen for its attentional condition rather than its convenience — if
-your existing entries lean occupied, look for an unoccupied one this week,
-or the other way round. Keep it low-risk and ordinary: your own waits, not
-anyone else's, and nothing that requires manipulating another person or a
-public system to arrange.
+wait that naturally differs in what occupied your attention from at least
+one of the entries you reread. Notice which of your everyday waits fits
+rather than engineering one to fit — if your existing entries happen to
+lean occupied, the next ordinary wait that happens to be unoccupied is the
+one to log, not one arranged to be that way. Keep it low-risk and ordinary:
+your own waits, not anyone else's, and nothing that requires manipulating
+another person, a public system, or the wait itself to arrange. Deliberately
+engineering the attentional condition is a Week 10 move, not a Week 2 one —
+this week stays observational.
 
 ## In the session
 
