@@ -21,8 +21,8 @@ the person doing the waiting, and they won't.
 
 That gap is what this course studies. Not "why does time feel weird" in
 general, but specifically: why the number a clock produces and the number a
-person reports afterwards routinely disagree, and what causes the
-disagreement to go one way rather than the other.
+person reports need not agree, and what causes them to diverge in one
+direction rather than another.
 
 ## Two durations, not one
 
@@ -30,10 +30,12 @@ Keep two different quantities apart from the start:
 
 - **Clock duration** — what a stopwatch would say. Five minutes is five
   minutes, regardless of who is waiting or how it felt.
-- **Judged duration** — what the person estimates or remembers, in whatever
-  units they'd naturally use ("felt like nothing," "felt like forever,"
-  "maybe ten minutes"). This is the number that actually determines whether
-  someone describes a wait as short or unbearable.
+- **Judged duration** — the duration a person reports or produces as their
+  judgement of a wait, whether that judgement is made during the interval or
+  only produced afterwards, in whatever units they'd naturally use ("felt
+  like nothing," "felt like forever," "maybe ten minutes"). It is one part
+  of what makes a wait feel short or unbearable, not the sole determinant of
+  it.
 
 The rest of the course is, in one sense, an extended argument about what
 moves judged duration around while clock duration stays fixed.
@@ -44,14 +46,18 @@ There's a second distinction underneath the first, and it matters more than
 it looks. A person can arrive at a duration judgement in two different
 circumstances:
 
-- **Prospectively** — they know, while the wait is still happening, that
-  they'll need to say how long it took. Checking your phone repeatedly while
-  on hold is a prospective stance: some part of your attention is tracking
-  time as it passes.
-- **Retrospectively** — they weren't tracking time at all while it passed,
-  and only construct an estimate afterwards, from memory, when asked. "How
-  long do you think that meeting ran?" the next day is a retrospective
-  question.
+- **Prospectively** — the person knows, before or during the wait, that a
+  duration judgement will be required of them. That forewarning is what
+  makes a judgement prospective — not any particular behaviour during the
+  wait. Someone told in advance they'll be asked how long a wait took is
+  making a prospective judgement whether they spend it checking a phone,
+  reading, or staring at nothing.
+- **Retrospectively** — the person was not forewarned. No duration
+  judgement was anticipated while the wait was happening; the estimate is
+  only produced once asked, afterwards, and has to be reconstructed from
+  memory rather than tracked as it happened. "How long do you think that
+  meeting ran?", asked the next day with no warning it was coming, is a
+  retrospective question.
 
 These aren't two measurement techniques for the same underlying thing — the
 evidence is that they draw on different cognitive processes. Block and
@@ -68,31 +74,31 @@ whatever you can recall about the wait afterwards) ([Block & Zakay,
 Two things follow, and both matter for how you'll use this course's central
 method:
 
-1. If you ask someone to estimate a wait, *when* you ask — during it, or
-   after it's over — is not a neutral choice. It changes what you're
-   measuring.
+1. Whether a person was forewarned that a duration judgement would be
+   needed isn't a neutral detail — it determines whether they're doing
+   prospective, attention-based monitoring or retrospective, memory-based
+   reconstruction, and those produce systematically different numbers.
 2. This is a documented pattern across many experiments, not a fixed rule
    that applies identically to every wait. What else the person is doing —
    how much attention the wait itself demands — shifts the size, and
    sometimes the direction, of the gap. That's next week's problem, not this
-   one; for now, the point is only that the gap exists and that prospective
-   and retrospective judgements are genuinely different measurements.
+   one; for now, the point is only that the distinction exists, and that
+   forewarning, not behaviour during the wait, is what separates a
+   prospective judgement from a retrospective one.
 
-## Why a service designer should care
+## Why this matters
 
-Nobody who builds a queue, a loading screen, or a waiting room fully
-controls how long people spend in it. Clock duration is often constrained by
-things outside anyone's design choices — how many staff are on shift, how
-fast a server responds, how far away the bus actually is. Judged duration is
-not fixed the same way. It moves. If it moves in a specific, non-arbitrary
-manner, it can be designed for.
-
-That's the whole thesis of this course: waiting is an experience, not merely
-a duration. The next three weeks name specific mechanisms — what you're
-doing while you wait, what you expected going in, what you're told while
-it's happening — that move judged duration independently of clock duration.
-Each week comes back to the same data you start collecting this week, and
-asks it a different question.
+The course's thesis is that waiting is an experience, not merely a
+duration. Week 1's job is to make that claim testable rather than just
+plausible: if judged duration only ever tracked clock duration, there would
+be nothing here to explain, and no reason to keep a log at all. The gap
+you'll start noticing this week — between what the clock says and what you
+report — is the thing the rest of the semester explains, analyses, and
+eventually tests. Weeks 2 to 4 name specific mechanisms — what you're doing
+while you wait, what you expected going in, what you're told while it's
+happening — that move judged duration independently of clock duration. Each
+week comes back to the same log you start this week, and asks it a
+different question.
 
 ## What you're building
 
@@ -106,5 +112,5 @@ access — it runs on waits you'd be having anyway.
 By Week 4 you'll have several weeks of your own entries and three
 explanatory mechanisms to read them against. This week only asks you to
 start collecting, and to notice the first thing this distinction reveals:
-whether you were watching the clock or not while you waited changes what
-"how long did that feel" even means as a question.
+whether you knew in advance you'd be asked to judge a wait changes what
+"how long did that feel" even means as an answer.

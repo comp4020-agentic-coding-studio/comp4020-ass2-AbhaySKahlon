@@ -46,7 +46,7 @@ even when the honest answer is "none" or "didn't notice":
 | Expected wait | What you thought the wait would be before it started, if you had any expectation at all |
 | Clock duration | How long the wait actually took, as close as you can measure it |
 | Judged duration | Your own estimate of how long it felt, in your own words or units |
-| Prospective or retrospective | Whether you were aware, *during* the wait, that you'd be estimating it afterwards (prospective), or only formed the estimate once it was over (retrospective) |
+| Prospective or retrospective | Whether you knew, before or during the wait, that you'd be asked to judge its duration (prospective), or weren't forewarned and only produced the judgement afterwards (retrospective) — this depends on what you knew going in, not on what you did during the wait |
 | Attending to | What you were actually doing or looking at for most of the wait |
 | Available information | Anything you were told or shown about the wait's likely length (a countdown, a queue position, nothing at all) |
 | Outcome / notes | Anything else worth remembering about how the wait ended or how it felt |
@@ -54,13 +54,19 @@ even when the honest answer is "none" or "didn't notice":
 **A worked example** (a model entry to show the format, not a real
 observation):
 
-> Context: waiting for a kettle to boil. Expected wait: "a few minutes."
-> Clock duration: 4 minutes. Judged duration: "felt like at least six or
-> seven." Prospective/retrospective: prospective — I was watching the kettle
-> and checking my phone the whole time. Attending to: the kettle, my phone,
-> back and forth. Available information: none — no indicator light, no
-> timer. Outcome/notes: annoyed by the end, even though four minutes is
-> short by any other measure.
+> Context: waiting for a kettle to boil, one evening before I'd thought to
+> start today's entries. Expected wait: "a few minutes." Clock duration: 4
+> minutes (worked out afterwards, from when I remembered switching the
+> kettle on). Judged duration: "felt like at least six or seven."
+> Prospective/retrospective: retrospective — nothing about the wait told me
+> in advance that I'd be asked how long it took; I only produced an
+> estimate once it was over, when I sat down to write up the log. Attending
+> to: the kettle, my phone, back and forth — that's what filled the four
+> minutes, not what makes this retrospective; someone forewarned they'd be
+> asked to judge the same wait would still be making a *prospective*
+> judgement even doing exactly the same thing. Available information: none
+> — no indicator light, no timer. Outcome/notes: annoyed by the end, even
+> though four minutes is short by any other measure.
 
 ## In the session
 
