@@ -2,36 +2,58 @@
 import Card from "astro-theme-university/components/Card.astro";
 import CardGrid from "astro-theme-university/components/CardGrid.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
-import heroImage from "../assets/images/hero-home.avif";
 import { courseMeta } from "../course-config";
 import { sessionLabels, siteConfig } from "../site-config";
 
-// STARTER_CONTENT: replace the hero artwork and its alt text below, then
-// remove this comment.
+const mechanisms = [
+  "time",
+  "attention",
+  "expectation",
+  "information",
+  "interfaces",
+  "environment",
+  "queue rules",
+  "priority",
+  "value",
+  "control",
+];
 ---
 
 <ContentLayout
   title={`${courseMeta.code}: ${courseMeta.title}`}
   description={courseMeta.description}
-  heroImage={heroImage}
-  heroImageAlt="A lecture theatre reduced to flat gold and black shapes, rows of seats sweeping past the frame, in a two-ink risograph print"
   {...siteConfig}
 >
   <ul class="course-tags" aria-label="Course tags">
     {courseMeta.tags.map((tag) => <li>{tag}</li>)}
   </ul>
 
-  <!-- STARTER_CONTENT: replace the authored page below, then remove this comment. -->
+  <p class="thesis">Waiting is an experience, not merely a duration.</p>
+
   <h2>What you will do</h2>
   <p>
-    Say what a student spends their time on — the making, reading, arguing or
-    measuring that fills the weeks. Name the artefact they walk out with.
+    In Week 1 you start a wait-observation log — timing an ordinary wait
+    against how long it felt — and keep adding to it all semester. The weeks
+    that follow use that log, and the mechanisms below, to move from
+    measuring a wait, to explaining why it felt the way it did, to analysing
+    designed waits, to running one small experiment of your own, and finally
+    to auditing a real waiting system and proposing what you'd change. You
+    leave with that audit, and a log you can point to for every claim in it.
+  </p>
+
+  <p>
+    The course studies ten mechanisms that shape a wait — {mechanisms.join(", ")}
+    — one per week. That list is a teaching structure this course has chosen,
+    not a settled or exhaustive scientific classification of why waiting feels
+    different; treat it as ten angles worth checking, not ten laws.
   </p>
 
   <h2>Who it is for</h2>
   <p>
-    Say who this is aimed at and what they need to already know. Be specific
-    enough that someone can rule themselves in or out without emailing you.
+    Anyone who has ever been annoyed at a queue and wanted to know why —
+    students of interaction design, service design or behavioural science
+    fit naturally, but the only real prerequisite is a willingness to sit in
+    an ordinary wait and pay attention to it instead of your phone.
   </p>
 
   <h2>Where to go next</h2>
@@ -44,6 +66,9 @@ import { sessionLabels, siteConfig } from "../site-config";
     </Card>
     <Card title="People" href="/people/">
       <p>Who teaches the course and how to reach them.</p>
+    </Card>
+    <Card title="Policies" href="/policies/">
+      <p>Extensions, accessibility, AI assistance and experiment ethics.</p>
     </Card>
   </CardGrid>
 </ContentLayout>
@@ -64,5 +89,14 @@ import { sessionLabels, siteConfig } from "../site-config";
     color: var(--at-text-secondary);
     background: var(--at-bg-alt);
     font-size: 0.9rem;
+  }
+
+  .thesis {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--at-text-secondary);
+    border-left: 3px solid var(--at-bg-alt);
+    padding-inline-start: 1rem;
+    margin-block-end: 2rem;
   }
 </style>

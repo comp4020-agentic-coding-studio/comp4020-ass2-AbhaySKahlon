@@ -1,17 +1,17 @@
 ---
 title: Idris Fenn
 description:
-  A tutor working across the course's first reviews and the practical work that
-  follows them.
-affiliation: Slop University School of Invented Disciplines
+  Tutor. Trained in service design and UX research; runs the weekly sessions
+  where field observations get argued over.
+affiliation: Slop University, Waiting Studies Group
 role: tutor
 email: idris.fenn@slop.university
 contact: Ask during sessions, or email when a question cannot wait until the next one.
-photo: ./idris-fenn.avif
-photoAlt: A stylised portrait of a person facing the viewer, flat gold and black shapes on warm cream, in a two-ink risograph print
 ---
 
-<!-- STARTER_CONTENT: replace this person entry, then remove this comment. -->
+Idris spent three years doing fieldwork in hospital waiting rooms and transit
+hubs before moving into teaching, and still keeps a running list of the worst
+queues he has personally stood in.
 
-Replace this entry. A second person makes the listing, role ordering and
-teacher-reference fields visible before you replace the cast with your own.
+He marks the Field Notes and the Queue Case Study, and reads drafts of the
+Waiting Experiment brief before it's submitted if you bring one to a session.
