@@ -44,55 +44,80 @@ starts; "Available information" can change over the course of the wait
 itself. This week stays on the expectation side. What a system does with
 information during a wait is next week's question, not this one.
 
-## A reference point, not a rule that shorter feels shorter
+## Two different reference points
 
-Pruyn and Smidts studied this with a reference point they call *acceptable
-waiting time* — the length beyond which a wait stops feeling tolerable —
-rather than a strict prediction of exact duration, but the underlying logic
-is the same shape as your log's expectation field: a wait gets evaluated
-against a standard set before or independent of it, not against zero
-([Pruyn & Smidts,
-1998](https://doi.org/10.1016/S0167-8116(98)00008-1)). Crossing that
-reference point, in their data, provokes a disproportionately strong
-negative reaction — going ten seconds over what you'd tolerate lands harder
-than the raw ten seconds would suggest. And it's specifically *perceived*
-waiting time, not the objective clock duration, that does most of the work
-in shaping satisfaction with the wait — the objective minutes matter mostly
-through how they're perceived, not directly on their own.
+Your log's "Expected wait" answers one question: how long did I think this
+would take? Pruyn and Smidts studied a related but distinct reference point
+they call *acceptable waiting time*: how long was I prepared to tolerate,
+in this particular situation ([Pruyn & Smidts,
+1998](https://doi.org/10.1016/S0167-8116(98)00008-1))? A prediction and a
+tolerance threshold usually move together, but they don't have to:
+
+- Expected 5 minutes, acceptable 15 minutes, actual 8 minutes — the wait
+  ran longer than expected, but comfortably inside what would have been
+  tolerated.
+- Expected 15 minutes, acceptable 10 minutes, actual 12 minutes — the wait
+  finished sooner than expected, yet still exceeded the acceptable
+  threshold.
+
+Pruyn and Smidts didn't measure anything called "Expected wait"; their
+acceptable waiting time is a tolerance standard, not a duration prediction.
+Their finding is closely related evidence about the same kind of
+reference-point effect your log's expectation field is built to catch, not
+a direct study of that exact field — worth reading carefully rather than
+treating as interchangeable.
+
+## What their reference point predicts
+
+Crossing the acceptable-waiting-time threshold, in their data, provokes a
+disproportionately strong negative affective response — going past what
+you were prepared to tolerate lands harder than the raw extra minutes would
+suggest on their own. In their service-waiting study, objective waiting
+time affected satisfaction mainly indirectly, through perceived waiting
+time; the waiting environment affected satisfaction too, but through a
+separate, affective route rather than by changing perceived time itself.
+Perceived time is one channel objective duration works through, not the
+only thing satisfaction depends on.
 
 This is a finding about **appraisal** — how a wait gets evaluated, which is
 what your log's Outcome/notes field is for — not a finding about **judged
 duration**, the separate estimate-of-length field Week 1 defined. Pruyn and
-Smidts don't show that missing your own expectation makes you estimate the
+Smidts don't show that missing a reference point makes you estimate the
 wait as numerically longer; they show it makes you feel worse about a wait
-of whatever length you estimated. Whether an expectation gap also shifts
-the judged-duration number itself is a further question your log may or may
-not be able to speak to — worth checking, not worth assuming.
+of whatever length you estimated. Whether a gap against expectation (or
+against what you'd tolerate) also shifts the judged-duration number itself
+is a further question your log may or may not be able to speak to — worth
+checking, not worth assuming.
 
 ## Where information fits, briefly
 
-Hui and Tse ran an experiment on exactly the piece this week is setting
-aside: giving people information *during* a wait — how long it would be, or
-where they stood in a queue — and tracking effects on how acceptable the
-wait felt and how it was evaluated afterwards ([Hui & Tse,
-1996](https://doi.org/10.1177/002224299606000206)). Their finding that
-such information's effect worked through acceptability and affect, not
-through the perceived-duration estimate directly, is one more reason to
-keep expectation and information as separate questions rather than folding
-one into the other: expectation is the standard you walk in with,
-information is what the wait itself tells you against that standard once
-it's underway. That's the question Week 4 opens.
+Hui and Tse ran an experiment on a different piece of the puzzle: giving
+people information *during* a wait — how long it would be, or where they
+stood in a queue — and tracking effects on how acceptable the wait felt,
+on affective response, and on evaluation of the service afterwards ([Hui &
+Tse, 1996](https://doi.org/10.1177/002224299606000206)). Their study
+wasn't designed to test expectation against information as two separate
+constructs — that split is this course's own framing, drawn from the plain
+fact that the two answer different questions (what you believed
+beforehand, against what you were told once the wait was already
+underway). What Hui and Tse's finding does usefully show is that
+information given *during* a wait works through acceptability and affect —
+the same territory Pruyn and Smidts' acceptable-waiting-time threshold
+occupies. That overlap, not a shared study, is the thread Week 4 picks up.
 
 ## What this doesn't establish
 
 None of this licenses "knowing the wait will be five minutes makes it feel
 like five minutes," and it doesn't license "a wait that beats your
-expectation always feels short." A reference point being violated
-provokes a stronger reaction than the raw gap in minutes would predict —
-that's the specific, narrower claim on the table, not a general law about
-expectation always softening or sharpening a wait. And it's a pattern found
-across the study's data, not something guaranteed to happen the same way
-for any one wait you happen to log this week.
+expectation always feels short." Exceeding what you were prepared to
+tolerate provokes a stronger reaction than the raw gap in minutes would
+predict — that's Pruyn and Smidts' specific, narrower claim about the
+acceptable-waiting-time threshold, not a general law about expectation
+softening or sharpening every wait, and not something to assume just
+because a wait finished under or over what you'd predicted rather than
+what you'd have tolerated. It's a pattern found across their study's data,
+not something guaranteed to happen the same way for any one wait you
+happen to log this week.
 
 ## Why this matters
 
