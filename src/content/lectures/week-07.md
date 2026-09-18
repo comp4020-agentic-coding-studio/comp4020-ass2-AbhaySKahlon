@@ -57,11 +57,13 @@ Haber, 2002](https://doi.org/10.1177/109467002237492)). The single- versus
 multiple-queue structure was the only thing that varied.
 
 Three measures matter here. Participants in the single-queue structure
-reported greater predictability and higher arousal than those in the
-multiple-queue structure, while arousal declined over the wait in the
-multiple-queue condition. And participants in the multiple-queue
-structure reported lower **perceived justice** than participants in the
-single-queue structure.
+reported greater predictability than those in the multiple-queue structure;
+predictability rose over the course of the single-queue wait but stayed flat
+in the multiple-queue condition. Participants in the single-queue structure
+also reported higher arousal, while arousal declined over the wait in the
+multiple-queue condition. And participants in the multiple-queue structure
+reported lower **perceived justice** than participants in the single-queue
+structure.
 
 That last finding is more specific than it first sounds, and the specific
 version is the one worth keeping. The researchers separated
