@@ -33,6 +33,10 @@ Ground factual claims in:
 - Block, Hancock & Zakay, on cognitive load and duration judgement
 - Hui & Tse, on the effect of waiting information
 - Pruyn & Smidts, on waiting environments
+- Harrison, Amento, Kuznetsov & Bell, on progress-bar behaviour and
+  perceived speed/preference under a controlled, fixed duration
+- Myers, on the effect of percent-done progress indicators on preference,
+  from an early HCI experiment (not a practitioner heuristic)
 - Maister, cited by name as a practitioner/historical framework (the
   "psychology of waiting lines" propositions) — **never presented as a
   settled scientific law**
