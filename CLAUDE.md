@@ -107,3 +107,69 @@ unless explicitly instructed.
 The four content collections' base shape, `astro.config.ts`'s integrations,
 and the generated API are not modified. The course is built to fit them, not
 the reverse.
+
+## 11. Course-first pedagogy: the weekly shape
+
+This is a teaching-and-design rule, not a stylistic preference. Every
+week's lecture and session are teaching artefacts for a prospective
+student, not a literature review of the sources they cite. Research
+supports teaching; it does not become the structure of the teaching.
+Concretely, every week's lecture and session must cover these six teaching
+jobs, in an order and form appropriate to that week's subject and
+activity:
+
+1. **Experience** — begin from a concrete waiting situation, observation,
+   question, or tension. Open here, not with a citation or a claim about
+   what a study found.
+2. **Concept** — introduce the week's mechanism in clear, student-facing
+   language, before any source is named. A student should be able to
+   state the week's idea in their own words from this section alone.
+3. **Evidence** — use research to substantiate the teaching point, with
+   methodological detail included only where it changes what a student
+   can legitimately conclude. A source earns its place because the
+   week's claim needs it, not because it is available, well known, or
+   impressive.
+4. **Action** — give the student something concrete to observe, compare,
+   analyse, test, or build.
+5. **Reflection/limits** — state plainly what the week's activity and
+   evidence can and cannot establish.
+6. **Progression** — explicitly connect the week's work to the course
+   thesis and to the next stage or week.
+
+Important: these are required teaching functions, not a rigid six-section
+page template. Do not force every week into identical headings, ordering,
+or prose structure. The shape should be adapted to the week's pedagogical
+purpose so the course does not become formulaic.
+
+Alongside the six teaching jobs, the following constraints hold for every
+week's content:
+
+- Weekly pages must not read as mini literature reviews. If a week's
+  structure could be mistaken for the structure of the paper(s) it cites
+  — hypotheses, method, results, limitations, in that order — it has
+  failed this rule, regardless of how accurate the citations are.
+- Do not remove useful evidence merely to make a page shorter. A week
+  that lost its research grounding in service of crisper prose has
+  failed this rule as surely as one buried in citations.
+- Do not dump participant demographics, measurement scales, statistical
+  detail, or paper-style methodological exposition (sample sizes,
+  exclusion counts, item wording, test statistics, and the like) unless
+  that specific detail changes what a student is entitled to conclude
+  from the evidence. When it does change that, state it plainly and
+  briefly, in the reflection/limits stage — not as scholarly
+  throat-clearing folded into the evidence stage.
+- Preserve accurate citations and the source's own stated limitations.
+  This rule constrains *placement and proportion*, never accuracy. Rule 3
+  still governs honesty of sourcing; this rule governs where and how much
+  of that sourcing appears on the page.
+- Every week must remain visibly tied to the course thesis — "waiting is
+  an experience, not merely a duration" — not just tied to its own
+  mechanism in isolation.
+- Every week must advance the course's measure → explain → analyse →
+  experiment → audit progression; the progression stage is not
+  decorative and must say something specific about why this week matters
+  for what comes next, not a generic transition sentence.
+
+This rule does not relax rule 3's sourcing honesty, rule 2's
+progression requirement, or rule 1's taxonomy framing — it constrains how
+those other rules' material is proportioned and sequenced on the page.
