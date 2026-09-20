@@ -27,7 +27,7 @@ spec:
   - you have classified each of the ten mechanisms — time, attention,
     expectation, information, interface, environment, queue structure,
     priority, value, control — as present, absent, ambiguous, or
-    undeterminable
+    cannot determine
   - for the five mechanisms your Case Study already covered, you have
     carried forward and re-tiered that evidence rather than re-deriving it
     from scratch
@@ -82,8 +82,8 @@ control, and to apply the evidence-tier layer below across all ten.
 Every mechanism gets answered twice, and the two answers are not the same
 question:
 
-- **Mechanism classification** — present, absent, ambiguous, or
-  undeterminable. This asks: *what appears to be in the system?*
+- **Mechanism classification** — present, absent, ambiguous, or cannot
+  determine. This asks: *what appears to be in the system?*
 - **Evidence tier** — directly evidenced, plausible interpretation, or
   undetermined. This asks: *how strongly can what I have actually support
   this claim?*
