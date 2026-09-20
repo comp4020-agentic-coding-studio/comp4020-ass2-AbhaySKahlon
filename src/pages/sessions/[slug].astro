@@ -7,6 +7,7 @@ import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import CourseBanner from "../../components/CourseBanner.astro";
 import TeachingTeam from "../../components/TeachingTeam.astro";
 import WeekPositionHeader from "../../components/WeekPositionHeader.astro";
+import { weekBanner } from "../../lib/weekBanners";
 import { graphCollections, sessionLabels, siteConfig } from "../../site-config";
 
 export async function getStaticPaths() {
@@ -17,14 +18,13 @@ export async function getStaticPaths() {
 const { session } = Astro.props;
 const { Content } = await render(session);
 const title = `Week ${session.data.week} ${sessionLabels.singular}: ${session.data.title}`;
-const weekSlug = String(session.data.week).padStart(2, "0");
 const mechanism = session.data.tags[0];
 ---
 
 <ContentLayout
   title={title}
   description={session.data.description}
-  heroImage={`/src/assets/images/banners/week-${weekSlug}.svg`}
+  heroImage={weekBanner(session.data.week)}
   heroImageAlt={`Banner for Week ${session.data.week}, ${session.data.title}, depicting the ${mechanism.replace("-", " ")} mechanism`}
   {...siteConfig}
 >

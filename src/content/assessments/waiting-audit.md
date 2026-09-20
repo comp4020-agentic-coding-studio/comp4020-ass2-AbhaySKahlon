@@ -77,6 +77,10 @@ assessment's structure rather than re-deriving them; your work here is to
 extend the analysis to time, attention, expectation, information, and
 control, and to apply the evidence-tier layer below across all ten.
 
+Any continued or new observation of that system stays bound by the same
+[Experiment ethics policy](/policies/#experiment-ethics) that governed the
+Case Study and the Waiting Experiment.
+
 ## Two questions, kept apart
 
 Every mechanism gets answered twice, and the two answers are not the same

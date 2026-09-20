@@ -78,28 +78,50 @@ const hasMeta = weekNumber !== undefined || mechanism !== undefined || date !== 
 </style>
 
 <style is:global>
-  /* Hero sizing for the course-banner system: a large horizontal editorial
-     banner at desktop widths, substantially shorter — not simply scaled
-     down — below the theme's single 640px breakpoint. Unlayered so it wins
-     over the theme's own @layer at.components without editing theme files;
-     every page in this course that sets heroImage is part of the banner
-     system, so a global rule is correct here rather than a risk. */
+  /* Hero sizing for the course-banner system. The banner is a compact header
+     — nav, then a short identity strip, then the page content — not a
+     full-height splash, so this fixes an actual pixel-height target rather
+     than just pinning the box to the artwork's own aspect ratio. Desktop
+     targets ~300px at a 1920px-wide viewport (32:5 = 1920/300, matching the
+     banner artwork's own 1600x250 canvas exactly, so `object-fit: cover` has
+     nothing to crop at that width); the `min-height`/`max-height` pair keeps
+     it in the ~220-340px band at other desktop widths. Below 640px the
+     target is ~150-180px tall at a 390px-wide phone (26:11 = 390/165), a
+     visibly squarer box than the wide desktop one — `cover` crops the
+     artwork's left/right edges there, never its top/bottom, which is what
+     the artwork's own horizontal safe-zone comment accounts for. Unlayered
+     so it wins over the theme's own @layer at.components without editing
+     theme files; every page in this course that sets heroImage is part of
+     the banner system, so a global rule is correct here rather than a risk. */
   .at-hero {
-    min-height: 22rem;
+    aspect-ratio: 32 / 5;
+    min-height: 220px;
+    max-height: 340px;
+  }
+
+  .at-hero-title {
+    padding-block: var(--at-spacing-md) var(--at-spacing-lg);
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+  }
+
+  .at-hero-title::after {
+    margin-block-start: var(--at-spacing-sm);
   }
 
   @media (width < 640px) {
     .at-hero {
-      min-height: 11rem;
+      aspect-ratio: 26 / 11;
+      min-height: 150px;
+      max-height: 180px;
     }
 
     .at-hero-title {
-      padding-block: var(--at-spacing-lg);
-      font-size: clamp(1.5rem, 8vw, 2.25rem);
+      padding-block: var(--at-spacing-sm) var(--at-spacing-md);
+      font-size: clamp(1.25rem, 6vw, 1.75rem);
     }
 
     .at-hero-title::after {
-      margin-block-start: var(--at-spacing-sm);
+      margin-block-start: var(--at-spacing-xs);
     }
   }
 </style>

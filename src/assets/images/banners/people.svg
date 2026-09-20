@@ -1,36 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="1600" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 250" width="1600" height="250">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#f6efe4"/>
       <stop offset="1" stop-color="#e9dbc2"/>
     </linearGradient>
   </defs>
-  <rect width="1600" height="500" fill="url(#bg)"/>
-  <g stroke="#6b6154" stroke-width="2" opacity="0.22"><line x1="96" y1="440" x2="96" y2="450"/><line x1="154" y1="440" x2="154" y2="450"/><line x1="212" y1="440" x2="212" y2="450"/><line x1="270" y1="440" x2="270" y2="450"/><line x1="328" y1="440" x2="328" y2="450"/><line x1="386" y1="440" x2="386" y2="450"/><line x1="444" y1="440" x2="444" y2="450"/><line x1="502" y1="440" x2="502" y2="450"/><line x1="560" y1="440" x2="560" y2="450"/><line x1="618" y1="440" x2="618" y2="450"/><line x1="676" y1="440" x2="676" y2="450"/><line x1="734" y1="440" x2="734" y2="450"/><line x1="792" y1="440" x2="792" y2="450"/><line x1="850" y1="440" x2="850" y2="450"/><line x1="908" y1="440" x2="908" y2="450"/><line x1="966" y1="440" x2="966" y2="450"/><line x1="1024" y1="440" x2="1024" y2="450"/><line x1="1082" y1="440" x2="1082" y2="450"/><line x1="1140" y1="440" x2="1140" y2="450"/><line x1="1198" y1="440" x2="1198" y2="450"/><line x1="1256" y1="440" x2="1256" y2="450"/><line x1="1314" y1="440" x2="1314" y2="450"/><line x1="1372" y1="440" x2="1372" y2="450"/><line x1="1430" y1="440" x2="1430" y2="450"/><line x1="1488" y1="440" x2="1488" y2="450"/></g>
-  <g stroke="#6b6154" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.55">
-    <path d="M 40 68 L 40 40 L 68 40"/>
-    <path d="M 1532 460 L 1560 460 L 1560 432"/>
-  </g>
-  <text x="40" y="478" font-family="ui-monospace, monospace" font-size="20" letter-spacing="0.12em" fill="#8a5c13" opacity="0.85">PEOPLE</text>
+  <rect width="1600" height="250" fill="url(#bg)"/>
 <g>
-    <rect x="220" y="130" width="220" height="240" rx="12" fill="none" stroke="#6b6154" stroke-width="2.5" opacity="0.7"/>
-    <circle cx="330" cy="168" r="22" fill="none" stroke="#8a5c13" stroke-width="2.5"/>
-    <text x="330" y="174" font-family="ui-monospace, monospace" font-size="16" text-anchor="middle" fill="#8a5c13">MQ</text>
-    <line x1="238" y1="336" x2="422" y2="336" stroke="#6b6154" stroke-width="2" opacity="0.5"/>
-    <line x1="238" y1="352" x2="400" y2="352" stroke="#6b6154" stroke-width="2" opacity="0.35"/>
+    <rect x="580" y="40" width="200" height="170" rx="12" fill="#fffdf8" stroke="#6b6154" stroke-width="5"/>
+    <circle cx="680" cy="82" r="26" fill="#e9dbc2" stroke="#8a5c13" stroke-width="5"/>
+    <text x="680" y="90" font-family="ui-monospace, monospace" font-size="20" font-weight="700" text-anchor="middle" fill="#8a5c13">MQ</text>
+    <line x1="598" y1="180" x2="762" y2="180" stroke="#6b6154" stroke-width="4" opacity="0.6"/>
+    <line x1="598" y1="195" x2="738" y2="195" stroke="#6b6154" stroke-width="4" opacity="0.4"/>
   </g>
 <g>
-    <rect x="520" y="170" width="220" height="240" rx="12" fill="none" stroke="#6b6154" stroke-width="2.5" opacity="0.7"/>
-    <circle cx="630" cy="208" r="22" fill="none" stroke="#8a5c13" stroke-width="2.5"/>
-    <text x="630" y="214" font-family="ui-monospace, monospace" font-size="16" text-anchor="middle" fill="#8a5c13">IF</text>
-    <line x1="538" y1="376" x2="722" y2="376" stroke="#6b6154" stroke-width="2" opacity="0.5"/>
-    <line x1="538" y1="392" x2="700" y2="392" stroke="#6b6154" stroke-width="2" opacity="0.35"/>
-  </g>
-<g>
-    <circle cx="1180" cy="230" r="90" fill="none" stroke="#6b6154" stroke-width="3" opacity="0.55"/>
-    <line x1="1180.0" y1="150.0" x2="1180.0" y2="140.0" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/><line x1="1220.0" y1="160.7" x2="1225.0" y2="152.1" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/><line x1="1249.3" y1="190.0" x2="1257.9" y2="185.0" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/><line x1="1260.0" y1="230.0" x2="1270.0" y2="230.0" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/><line x1="1249.3" y1="270.0" x2="1257.9" y2="275.0" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/><line x1="1220.0" y1="299.3" x2="1225.0" y2="307.9" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/><line x1="1180.0" y1="310.0" x2="1180.0" y2="320.0" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/><line x1="1140.0" y1="299.3" x2="1135.0" y2="307.9" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/><line x1="1110.7" y1="270.0" x2="1102.1" y2="275.0" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/><line x1="1100.0" y1="230.0" x2="1090.0" y2="230.0" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/><line x1="1110.7" y1="190.0" x2="1102.1" y2="185.0" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/><line x1="1140.0" y1="160.7" x2="1135.0" y2="152.1" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
-    <line x1="1180" y1="230" x2="1218.8" y2="252.7" stroke="#8a5c13" stroke-width="6" stroke-linecap="round"/>
-    <line x1="1180" y1="230" x2="1237.8" y2="184.1" stroke="#8a5c13" stroke-width="4" stroke-linecap="round"/>
-    <circle cx="1180" cy="230" r="5" fill="#8a5c13"/>
+    <rect x="820" y="40" width="200" height="170" rx="12" fill="#fffdf8" stroke="#6b6154" stroke-width="5"/>
+    <circle cx="920" cy="82" r="26" fill="#e9dbc2" stroke="#8a5c13" stroke-width="5"/>
+    <text x="920" y="90" font-family="ui-monospace, monospace" font-size="20" font-weight="700" text-anchor="middle" fill="#8a5c13">IF</text>
+    <line x1="838" y1="180" x2="1002" y2="180" stroke="#6b6154" stroke-width="4" opacity="0.6"/>
+    <line x1="838" y1="195" x2="978" y2="195" stroke="#6b6154" stroke-width="4" opacity="0.4"/>
   </g>
 </svg>

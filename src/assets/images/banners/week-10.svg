@@ -1,23 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="1600" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 250" width="1600" height="250">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#f6efe4"/>
       <stop offset="1" stop-color="#e9dbc2"/>
     </linearGradient>
   </defs>
-  <rect width="1600" height="500" fill="url(#bg)"/>
-  <g stroke="#6b6154" stroke-width="2" opacity="0.22"><line x1="96" y1="440" x2="96" y2="450"/><line x1="154" y1="440" x2="154" y2="450"/><line x1="212" y1="440" x2="212" y2="450"/><line x1="270" y1="440" x2="270" y2="450"/><line x1="328" y1="440" x2="328" y2="450"/><line x1="386" y1="440" x2="386" y2="450"/><line x1="444" y1="440" x2="444" y2="450"/><line x1="502" y1="440" x2="502" y2="450"/><line x1="560" y1="440" x2="560" y2="450"/><line x1="618" y1="440" x2="618" y2="450"/><line x1="676" y1="440" x2="676" y2="450"/><line x1="734" y1="440" x2="734" y2="450"/><line x1="792" y1="440" x2="792" y2="450"/><line x1="850" y1="440" x2="850" y2="450"/><line x1="908" y1="440" x2="908" y2="450"/><line x1="966" y1="440" x2="966" y2="450"/><line x1="1024" y1="440" x2="1024" y2="450"/><line x1="1082" y1="440" x2="1082" y2="450"/><line x1="1140" y1="440" x2="1140" y2="450"/><line x1="1198" y1="440" x2="1198" y2="450"/><line x1="1256" y1="440" x2="1256" y2="450"/><line x1="1314" y1="440" x2="1314" y2="450"/><line x1="1372" y1="440" x2="1372" y2="450"/><line x1="1430" y1="440" x2="1430" y2="450"/><line x1="1488" y1="440" x2="1488" y2="450"/></g>
-  <g stroke="#6b6154" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.55">
-    <path d="M 40 68 L 40 40 L 68 40"/>
-    <path d="M 1532 460 L 1560 460 L 1560 432"/>
-  </g>
-  <text x="40" y="478" font-family="ui-monospace, monospace" font-size="20" letter-spacing="0.12em" fill="#8a5c13" opacity="0.85">WEEK 10 · CONTROL</text>
+  <rect width="1600" height="250" fill="url(#bg)"/>
 <g stroke-linecap="round" fill="none">
-    <path d="M 300 260 L 390 260" stroke="#6b6154" stroke-width="3"/>
-    <path d="M 390 260 L 560 168" stroke="#b97d1c" stroke-width="3.5"/>
-    <path d="M 390 260 L 560 352" stroke="#6b6154" stroke-width="3" stroke-dasharray="2 8"/>
-    <circle cx="390" cy="260" r="6" fill="#8a5c13"/>
-    <circle cx="560.0" cy="168.0" r="11" fill="#b97d1c"/>
-    <circle cx="560.0" cy="352.0" r="11" fill="none" stroke="#6b6154" stroke-width="2.5"/>
+    <path d="M 650 125 L 730 125" stroke="#6b6154" stroke-width="8"/>
+    <path d="M 730 125 L 880 63" stroke="#b97d1c" stroke-width="9"/>
+    <path d="M 730 125 L 880 187" stroke="#6b6154" stroke-width="7" stroke-dasharray="3 12"/>
+    <circle cx="730" cy="125" r="10" fill="#8a5c13" stroke="none"/>
+    <circle cx="880" cy="63" r="18" fill="#b97d1c" stroke="none"/>
+    <circle cx="880" cy="187" r="18" fill="#fffdf8" stroke="#6b6154" stroke-width="5"/>
   </g>
+  <text x="880" y="35" font-family="ui-monospace, monospace" font-size="19" font-weight="600" letter-spacing="0.06em" text-anchor="middle" fill="#b97d1c">LEAVE</text>
+  <text x="880" y="223" font-family="ui-monospace, monospace" font-size="19" font-weight="600" letter-spacing="0.06em" text-anchor="middle" fill="#6b6154">STAY</text>
 </svg>

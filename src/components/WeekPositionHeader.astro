@@ -1,12 +1,17 @@
 ---
 /**
  * Structural position marker for an individual lecture/session page: where
- * this week sits on the course's 12-week queue-line, and which pedagogical
- * phase (src/lib/phases.ts) it belongs to. The tick row is decorative
- * (aria-hidden); the caption beneath it carries the same information as
- * real text, so nothing here depends on hover or on the row being visually
- * parsed.
+ * this week sits on the course's 12-week sequence, and which pedagogical
+ * phase (src/lib/phases.ts) it belongs to. The row is real navigation — each
+ * numbered tab links to that week's lecture page — not decoration, so it
+ * carries its own accessible names and current-item semantics; the caption
+ * beneath it still states the same information as plain text for anyone who
+ * doesn't parse the row visually. Labelled tabs showing each week's number
+ * (rather than bare line segments) and separated from the hero banner above
+ * it, specifically so the row reads as navigation and not as a progress or
+ * loading bar.
  */
+import { withBase } from "astro-theme-university/url";
 import { phaseForWeek, phaseRangeLabel } from "../lib/phases";
 
 interface Props {
@@ -19,16 +24,21 @@ const phase = phaseForWeek(week);
 const weeks = Array.from({ length: 12 }, (_, i) => i + 1);
 ---
 
-<div class="week-position">
-  <ol class="week-position-line" aria-hidden="true">
+<nav class="week-position" aria-label="Course weeks">
+  <p class="week-position-label">Course weeks</p>
+  <ol class="week-position-line">
     {
       weeks.map((w) => (
-        <li
-          class:list={[
-            "week-position-tick",
-            { "is-current": w === week, "is-past": w < week },
-          ]}
-        />
+        <li>
+          <a
+            href={withBase(`/lectures/week-${String(w).padStart(2, "0")}/`)}
+            class:list={["week-position-tab", { "is-current": w === week, "is-past": w < week }]}
+            aria-current={w === week ? "step" : undefined}
+            aria-label={`Week ${w}${w === week ? " (this page)" : ""}`}
+          >
+            {w}
+          </a>
+        </li>
       ))
     }
   </ol>
@@ -41,37 +51,79 @@ const weeks = Array.from({ length: 12 }, (_, i) => i + 1);
       </>
     )}
   </p>
-</div>
+</nav>
 
 <style>
+  /* A row of distinct, individually-bordered number tabs — not a single
+     connected track with a fill, and not thin line segments — so this reads
+     unambiguously as a set of 12 links to jump between, never as a progress
+     or loading indicator. The generous top margin keeps it visually
+     separated from the hero banner and its own eyebrow/meta strip above. */
   .week-position {
-    margin-block: 0 2rem;
+    margin-block: 1.5rem 2rem;
+  }
+
+  .week-position-label {
+    margin: 0 0 0.5rem;
+    font-size: var(--at-font-size-sm);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--at-text-secondary);
   }
 
   .week-position-line {
     display: flex;
-    gap: 0.35rem;
-    margin: 0 0 0.6rem;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0 0 0.75rem;
     padding: 0;
     list-style: none;
   }
 
-  .week-position-tick {
-    flex: 1;
-    height: 6px;
-    border-radius: 999px;
-    background: var(--at-bg-alt);
+  .week-position-line li {
+    display: flex;
   }
 
-  .week-position-tick.is-past {
-    background: var(--at-tertiary, var(--at-bg-alt));
-    opacity: 0.55;
+  .week-position-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.25rem;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid var(--at-bg-alt);
+    border-radius: var(--at-radius-sm, 0.35rem);
+    background: var(--at-bg);
+    color: var(--at-text-secondary);
+    font-size: var(--at-font-size-sm);
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 1;
   }
 
-  .week-position-tick.is-current {
+  .week-position-tab.is-past {
+    border-color: var(--at-tertiary, var(--at-bg-alt));
+    color: var(--at-text-secondary);
+  }
+
+  .week-position-tab.is-current {
     background: var(--at-primary);
-    outline: 2px solid var(--at-primary);
-    outline-offset: 1px;
+    border-color: var(--at-primary);
+    color: var(--at-bg);
+  }
+
+  .week-position-tab:hover {
+    border-color: var(--at-primary);
+    color: var(--at-primary);
+  }
+
+  .week-position-tab.is-current:hover {
+    color: var(--at-bg);
+  }
+
+  .week-position-tab:focus-visible {
+    outline: 3px solid var(--at-primary);
+    outline-offset: 2px;
   }
 
   .week-position-caption {
