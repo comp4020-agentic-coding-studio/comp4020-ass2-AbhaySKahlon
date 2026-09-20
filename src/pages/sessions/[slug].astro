@@ -4,8 +4,9 @@ import { getPublishedCollection } from "astro-course-university/content";
 import RelatedContent from "astro-course-university/components/RelatedContent.astro";
 import SpecList from "astro-course-university/components/SpecList.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import CourseBanner from "../../components/CourseBanner.astro";
 import TeachingTeam from "../../components/TeachingTeam.astro";
-import { formatCourseDate } from "../../lib/dates";
+import WeekPositionHeader from "../../components/WeekPositionHeader.astro";
 import { graphCollections, sessionLabels, siteConfig } from "../../site-config";
 
 export async function getStaticPaths() {
@@ -15,14 +16,20 @@ export async function getStaticPaths() {
 
 const { session } = Astro.props;
 const { Content } = await render(session);
+const title = `Week ${session.data.week} ${sessionLabels.singular}: ${session.data.title}`;
+const weekSlug = String(session.data.week).padStart(2, "0");
+const mechanism = session.data.tags[0];
 ---
 
 <ContentLayout
-  title={`Week ${session.data.week} ${sessionLabels.singular}: ${session.data.title}`}
+  title={title}
   description={session.data.description}
+  heroImage={`/src/assets/images/banners/week-${weekSlug}.svg`}
+  heroImageAlt={`Abstract waiting-mechanism banner for Week ${session.data.week}`}
   {...siteConfig}
 >
-  <p><strong>{formatCourseDate(session.data.date)}</strong></p>
+  <CourseBanner title={title} eyebrow="SLOP4787 · The Science of Waiting" date={session.data.date} />
+  <WeekPositionHeader week={session.data.week} mechanism={mechanism} />
   <Content />
   <SpecList spec={session.data.spec}>
     What you bring to the session. Written so a reader can tell whether it has

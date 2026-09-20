@@ -1,0 +1,84 @@
+---
+/**
+ * Course Phase Tracker — Measure -> Explain -> Analyse -> Experiment ->
+ * Audit (src/lib/phases.ts), the course's five-stage pedagogical
+ * progression across all 12 weeks. This is informational only: no links,
+ * no navigation, and it deliberately does not imply one graded assessment
+ * per phase (several weeks share a phase; a phase is not "worth" a grade).
+ * That's a separate system — see AssessmentTracker.astro for the four
+ * graded assessments.
+ */
+import { PHASES, type CoursePhase } from "../lib/phases";
+
+interface Props {
+  current?: CoursePhase;
+}
+
+const { current } = Astro.props;
+---
+
+<ol class="phase-tracker" aria-label="Course phases: measure, explain, analyse, experiment, audit">
+  {
+    PHASES.map(({ phase, from, to }) => (
+      <li
+        class:list={["phase-tracker-step", { "is-current": phase === current }]}
+        aria-current={phase === current ? "step" : undefined}
+      >
+        <span class="phase-tracker-name">{phase}</span>
+        <span class="phase-tracker-weeks">{from === to ? `Week ${from}` : `Weeks ${from}–${to}`}</span>
+      </li>
+    ))
+  }
+</ol>
+
+<style>
+  .phase-tracker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 0 0 1.5rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .phase-tracker-step {
+    flex: 1 1 8rem;
+    padding: 0.6rem 0.9rem;
+    border-block-start: 3px solid var(--at-bg-alt);
+    color: var(--at-text-secondary);
+  }
+
+  .phase-tracker-step.is-current {
+    border-block-start-color: var(--at-primary);
+    color: var(--at-text);
+  }
+
+  .phase-tracker-name {
+    display: block;
+    font-weight: 700;
+  }
+
+  .phase-tracker-step.is-current .phase-tracker-name {
+    color: var(--at-heading);
+  }
+
+  .phase-tracker-weeks {
+    display: block;
+    font-size: var(--at-font-size-sm);
+  }
+
+  @media (width < 640px) {
+    .phase-tracker {
+      flex-direction: column;
+    }
+
+    .phase-tracker-step {
+      border-block-start: none;
+      border-inline-start: 3px solid var(--at-bg-alt);
+    }
+
+    .phase-tracker-step.is-current {
+      border-inline-start-color: var(--at-primary);
+    }
+  }
+</style>

@@ -1,0 +1,87 @@
+---
+/**
+ * Structural position marker for an individual lecture/session page: where
+ * this week sits on the course's 12-week queue-line, and which pedagogical
+ * phase (src/lib/phases.ts) it belongs to. The tick row is decorative
+ * (aria-hidden); the caption beneath it carries the same information as
+ * real text, so nothing here depends on hover or on the row being visually
+ * parsed.
+ */
+import { phaseForWeek, phaseRangeLabel } from "../lib/phases";
+
+interface Props {
+  week: number;
+  mechanism?: string;
+}
+
+const { week, mechanism } = Astro.props;
+const phase = phaseForWeek(week);
+const weeks = Array.from({ length: 12 }, (_, i) => i + 1);
+---
+
+<div class="week-position">
+  <ol class="week-position-line" aria-hidden="true">
+    {
+      weeks.map((w) => (
+        <li
+          class:list={[
+            "week-position-tick",
+            { "is-current": w === week, "is-past": w < week },
+          ]}
+        />
+      ))
+    }
+  </ol>
+  <p class="week-position-caption">
+    Week {week} of 12 · <strong>{phase}</strong> phase ({phaseRangeLabel(phase)})
+    {mechanism && (
+      <>
+        {" "}
+        · <span class="week-position-mechanism">{mechanism}</span>
+      </>
+    )}
+  </p>
+</div>
+
+<style>
+  .week-position {
+    margin-block: 0 2rem;
+  }
+
+  .week-position-line {
+    display: flex;
+    gap: 0.35rem;
+    margin: 0 0 0.6rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .week-position-tick {
+    flex: 1;
+    height: 6px;
+    border-radius: 999px;
+    background: var(--at-bg-alt);
+  }
+
+  .week-position-tick.is-past {
+    background: var(--at-tertiary, var(--at-bg-alt));
+    opacity: 0.55;
+  }
+
+  .week-position-tick.is-current {
+    background: var(--at-primary);
+    outline: 2px solid var(--at-primary);
+    outline-offset: 1px;
+  }
+
+  .week-position-caption {
+    margin: 0;
+    color: var(--at-text-secondary);
+    font-size: var(--at-font-size-sm);
+  }
+
+  .week-position-mechanism {
+    font-weight: 600;
+    color: var(--at-heading);
+  }
+</style>

@@ -2,10 +2,12 @@
 import { render } from "astro:content";
 import { getPublishedCollection } from "astro-course-university/content";
 import RelatedContent from "astro-course-university/components/RelatedContent.astro";
+import Callout from "astro-theme-university/components/Callout.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import { withBase } from "astro-theme-university/url";
+import CourseBanner from "../../components/CourseBanner.astro";
 import TeachingTeam from "../../components/TeachingTeam.astro";
-import { formatCourseDate } from "../../lib/dates";
+import WeekPositionHeader from "../../components/WeekPositionHeader.astro";
 import { graphCollections, siteConfig } from "../../site-config";
 
 export async function getStaticPaths() {
@@ -16,11 +18,29 @@ export async function getStaticPaths() {
 const { lecture } = Astro.props;
 const { Content } = await render(lecture);
 const title = `Week ${lecture.data.week}: ${lecture.data.title}`;
+const weekSlug = String(lecture.data.week).padStart(2, "0");
+const mechanism = lecture.data.tags[0];
 ---
 
-<ContentLayout title={title} description={lecture.data.description} {...siteConfig}>
-  <p><strong>{formatCourseDate(lecture.data.date)}</strong></p>
-  {lecture.data.slides && <p><a href={withBase(lecture.data.slides)}>Open the slides</a></p>}
+<ContentLayout
+  title={title}
+  description={lecture.data.description}
+  heroImage={`/src/assets/images/banners/week-${weekSlug}.svg`}
+  heroImageAlt={`Abstract waiting-mechanism banner for Week ${lecture.data.week}`}
+  {...siteConfig}
+>
+  <CourseBanner title={title} eyebrow="SLOP4787 · The Science of Waiting" date={lecture.data.date} />
+  <WeekPositionHeader week={lecture.data.week} mechanism={mechanism} />
+  {
+    lecture.data.slides && (
+      <Callout type="tip">
+        <p>
+          This week's lecture has an accompanying slide deck.{" "}
+          <a href={withBase(lecture.data.slides)}>Open the slides</a>.
+        </p>
+      </Callout>
+    )
+  }
   <Content />
   <TeachingTeam teachers={lecture.data.teachers} />
   <RelatedContent entry={lecture} collections={graphCollections} />

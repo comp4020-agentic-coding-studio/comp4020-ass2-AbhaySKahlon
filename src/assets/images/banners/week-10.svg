@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="1600" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6efe4"/>
+      <stop offset="1" stop-color="#e9dbc2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="500" fill="url(#bg)"/>
+<g fill="none" stroke-linecap="round">
+    <circle cx="140" cy="226.31646394729614" r="75.80390986055136" stroke="#6b6154" stroke-width="2.5" opacity="0.5"/>
+    <line x1="140" y1="226.31646394729614" x2="163.2" y2="196.4" stroke="#b97d1c" stroke-width="4"/>
+    <line x1="140" y1="226.31646394729614" x2="156.9" y2="284.6" stroke="#8a5c13" stroke-width="3"/>
+    <circle cx="140" cy="226.31646394729614" r="4" fill="#8a5c13"/>
+  </g>
+<g fill="none" stroke-width="3">
+    <circle cx="767.5" cy="204.33364112395793" r="60" stroke="#b97d1c" opacity="0.85"/>
+    <circle cx="832.5" cy="204.33364112395793" r="60" stroke="#8a5c13" opacity="0.85"/>
+  </g>
+<g>
+    <rect x="1370" y="154.5325061911717" width="180" height="120" rx="10" fill="none" stroke="#8a5c13" stroke-width="3" stroke-dasharray="1 9" stroke-linecap="round"/>
+    <text x="1460" y="222.5325061911717" font-family="ui-monospace, monospace" font-size="26" fill="#8a5c13" text-anchor="middle">10</text>
+  </g>
+</svg>

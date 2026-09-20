@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="1600" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6efe4"/>
+      <stop offset="1" stop-color="#e9dbc2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="500" fill="url(#bg)"/>
+<g>
+    <rect x="140" y="150" width="260" height="200" rx="10" fill="none" stroke="#8a5c13" stroke-width="3" stroke-dasharray="1 9" stroke-linecap="round"/>
+    <text x="270" y="258" font-family="ui-monospace, monospace" font-size="26" fill="#8a5c13" text-anchor="middle">§</text>
+  </g>
+<g>
+    <rect x="500" y="400" width="380" height="12" rx="6" fill="none" stroke="#6b6154" stroke-width="2.5" opacity="0.55"/>
+    <rect x="500" y="400" width="380.0" height="12" rx="6" fill="#b97d1c"/>
+  </g>
+<g stroke="#6b6154" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M 980 132 L 980 110 L 1002 110"/>
+    <path d="M 1158 110 L 1180 110 L 1180 132"/>
+    <path d="M 1180 288 L 1180 310 L 1158 310"/>
+    <path d="M 1002 310 L 980 310 L 980 288"/>
+  </g>
+<g stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M 1240 300 L 1310 300" stroke="#6b6154"/>
+    <path d="M 1310 300 L 1400 250" stroke="#b97d1c"/>
+    <path d="M 1310 300 L 1400 350" stroke="#6b6154"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="1600" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6efe4"/>
+      <stop offset="1" stop-color="#e9dbc2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="500" fill="url(#bg)"/>
+<g><line x1="-20" y1="340" x2="-20" y2="368" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/><line x1="20" y1="340" x2="20" y2="386" stroke="#b97d1c" stroke-width="5" stroke-linecap="round" opacity="1"/><line x1="60" y1="340" x2="60" y2="368" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/><line x1="100" y1="340" x2="100" y2="368" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/><line x1="140" y1="340" x2="140" y2="368" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/><line x1="180" y1="340" x2="180" y2="368" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/><line x1="220" y1="340" x2="220" y2="368" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/></g>
+<g fill="none" stroke-linecap="round">
+    <circle cx="800" cy="257.69590785261244" r="66.76207554526627" stroke="#6b6154" stroke-width="2.5" opacity="0.5"/>
+    <line x1="800" y1="257.69590785261244" x2="769.6" y2="243.9" stroke="#b97d1c" stroke-width="4"/>
+    <line x1="800" y1="257.69590785261244" x2="846.5" y2="231.4" stroke="#8a5c13" stroke-width="3"/>
+    <circle cx="800" cy="257.69590785261244" r="4" fill="#8a5c13"/>
+  </g>
+<g>
+    <rect x="1370" y="218.1854775454849" width="180" height="120" rx="10" fill="none" stroke="#8a5c13" stroke-width="3" stroke-dasharray="1 9" stroke-linecap="round"/>
+    <text x="1460" y="286.1854775454849" font-family="ui-monospace, monospace" font-size="26" fill="#8a5c13" text-anchor="middle">08</text>
+  </g>
+</svg>

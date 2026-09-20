@@ -1,0 +1,94 @@
+---
+/**
+ * Assessment Tracker — the four graded assessments (Waiting Field Notes,
+ * Queue Case Study, Waiting Experiment, Waiting Audit), each a real link to
+ * its own page. This is a distinct system from PhaseTracker.astro: four
+ * assessments do not map one-to-one onto the five course phases, so the two
+ * trackers are never merged or made to look alike.
+ */
+import type { CollectionEntry } from "astro:content";
+import { getPublishedCollection } from "astro-course-university/content";
+import { withBase } from "astro-theme-university/url";
+
+interface Props {
+  assessments?: CollectionEntry<"assessments">[];
+  current?: string;
+}
+
+const { assessments, current } = Astro.props;
+const list = assessments ?? (await getPublishedCollection("assessments"));
+const sorted = [...list].sort((a, b) => a.data.week - b.data.week);
+---
+
+<ol class="assessment-tracker" aria-label="Assessment progression">
+  {
+    sorted.map((assessment) => {
+      const isCurrent = assessment.id === current;
+      return (
+        <li class="assessment-tracker-step">
+          <a
+            href={withBase(`/assessments/${assessment.id}/`)}
+            class:list={["assessment-tracker-link", { "is-current": isCurrent }]}
+            aria-current={isCurrent ? "page" : undefined}
+          >
+            <span class="assessment-tracker-title">{assessment.data.title}</span>
+            <span class="assessment-tracker-detail">
+              {assessment.data.weight}% · due Week {assessment.data.week}
+            </span>
+          </a>
+        </li>
+      );
+    })
+  }
+</ol>
+
+<style>
+  .assessment-tracker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 0 0 1.5rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .assessment-tracker-step {
+    flex: 1 1 11rem;
+  }
+
+  .assessment-tracker-link {
+    display: block;
+    padding: 0.65rem 0.9rem;
+    border: 1px solid var(--at-bg-alt);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .assessment-tracker-link:hover {
+    border-color: var(--at-primary);
+  }
+
+  .assessment-tracker-link.is-current {
+    border-color: var(--at-primary);
+    background: color-mix(in oklch, var(--at-primary) 10%, transparent);
+  }
+
+  .assessment-tracker-title {
+    display: block;
+    font-weight: 700;
+    color: var(--at-heading);
+  }
+
+  .assessment-tracker-detail {
+    display: block;
+    font-size: var(--at-font-size-sm);
+    color: var(--at-text-secondary);
+  }
+
+  @media (width < 640px) {
+    .assessment-tracker {
+      flex-direction: column;
+    }
+  }
+</style>

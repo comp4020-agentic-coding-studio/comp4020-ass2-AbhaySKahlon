@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="1600" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6efe4"/>
+      <stop offset="1" stop-color="#e9dbc2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="500" fill="url(#bg)"/>
+<g>
+    <rect x="120" y="190" width="200" height="130" rx="10" fill="none" stroke="#8a5c13" stroke-width="3" stroke-dasharray="1 9" stroke-linecap="round"/>
+    <text x="220" y="263" font-family="ui-monospace, monospace" font-size="26" fill="#8a5c13" text-anchor="middle">01</text>
+  </g>
+<g>
+    <rect x="400" y="190" width="200" height="130" rx="10" fill="none" stroke="#8a5c13" stroke-width="3" stroke-dasharray="1 9" stroke-linecap="round"/>
+    <text x="500" y="263" font-family="ui-monospace, monospace" font-size="26" fill="#8a5c13" text-anchor="middle">02</text>
+  </g>
+<g>
+    <rect x="680" y="190" width="200" height="130" rx="10" fill="none" stroke="#8a5c13" stroke-width="3" stroke-dasharray="1 9" stroke-linecap="round"/>
+    <text x="780" y="263" font-family="ui-monospace, monospace" font-size="26" fill="#8a5c13" text-anchor="middle">03</text>
+  </g>
+<g>
+    <rect x="960" y="190" width="200" height="130" rx="10" fill="none" stroke="#8a5c13" stroke-width="3" stroke-dasharray="1 9" stroke-linecap="round"/>
+    <text x="1060" y="263" font-family="ui-monospace, monospace" font-size="26" fill="#8a5c13" text-anchor="middle">04</text>
+  </g>
+<g>
+    <rect x="120" y="380" width="1040" height="14" rx="7" fill="none" stroke="#6b6154" stroke-width="2.5" opacity="0.55"/>
+    <rect x="120" y="380" width="811.2" height="14" rx="7" fill="#b97d1c"/>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="1600" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6efe4"/>
+      <stop offset="1" stop-color="#e9dbc2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="500" fill="url(#bg)"/>
+<g>
+    <rect x="-40" y="380" width="360" height="14" rx="7" fill="none" stroke="#6b6154" stroke-width="2.5" opacity="0.55"/>
+    <rect x="-40" y="380" width="172.4" height="14" rx="7" fill="#b97d1c"/>
+  </g>
+<g stroke="#6b6154" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M 700 222.1484979270026 L 700 200.1484979270026 L 722 200.1484979270026"/>
+    <path d="M 878 200.1484979270026 L 900 200.1484979270026 L 900 222.1484979270026"/>
+    <path d="M 900 378.1484979270026 L 900 400.1484979270026 L 878 400.1484979270026"/>
+    <path d="M 722 400.1484979270026 L 700 400.1484979270026 L 700 378.1484979270026"/>
+  </g>
+<g>
+    <rect x="1370" y="230.62182260211557" width="180" height="120" rx="10" fill="none" stroke="#8a5c13" stroke-width="3" stroke-dasharray="1 9" stroke-linecap="round"/>
+    <text x="1460" y="298.62182260211557" font-family="ui-monospace, monospace" font-size="26" fill="#8a5c13" text-anchor="middle">02</text>
+  </g>
+</svg>

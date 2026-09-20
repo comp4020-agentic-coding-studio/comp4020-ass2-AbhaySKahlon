@@ -2,7 +2,10 @@
 import Card from "astro-theme-university/components/Card.astro";
 import CardGrid from "astro-theme-university/components/CardGrid.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
-import { withBase } from "astro-theme-university/url";
+import { getPublishedCollection } from "astro-course-university/content";
+import AssessmentTracker from "../components/AssessmentTracker.astro";
+import CourseTimeline from "../components/CourseTimeline.astro";
+import PhaseTracker from "../components/PhaseTracker.astro";
 import { courseMeta } from "../course-config";
 import { sessionLabels, siteConfig } from "../site-config";
 
@@ -33,43 +36,28 @@ const dateFormatter = new Intl.DateTimeFormat("en-AU", {
 });
 const teachingPeriod = `${dateFormatter.format(new Date(courseMeta.startDate))} – ${dateFormatter.format(new Date(courseMeta.endDate))}`;
 
-// The planned week-by-week schedule and assessment scheme. Only Week 1 has
-// been authored so far; the rest is the approved architecture, shown here as
-// a schedule rather than as authored session/lecture content.
-const weeklySchedule = [
-  { week: 1, title: "Five Minutes", phase: "Measure" },
-  { week: 2, title: "Watching the Clock", phase: "Explain" },
-  { week: 3, title: "How Long Did You Expect?", phase: "Explain" },
-  { week: 4, title: "Tell Me Where I Stand", phase: "Explain" },
-  { week: 5, title: "The Progress Bar", phase: "Analyse" },
-  { week: 6, title: "The Room", phase: "Analyse" },
-  { week: 7, title: "Who Goes Next?", phase: "Analyse" },
-  { week: 8, title: "Who Doesn't Have to Wait?", phase: "Analyse" },
-  { week: 9, title: "The Useful Wait", phase: "Analyse" },
-  { week: 10, title: "Break the Wait", phase: "Experiment" },
-  { week: 11, title: "Who Owns the Wait?", phase: "Experiment" },
-  { week: 12, title: "The Waiting Audit", phase: "Audit" },
-];
-
-const plannedAssessments = [
-  { name: "Waiting Field Notes", weight: 15, dueWeek: 4 },
-  { name: "Queue Case Study", weight: 20, dueWeek: 9 },
-  { name: "Waiting Experiment", weight: 25, dueWeek: 10 },
-  { name: "Waiting Audit", weight: 40, dueWeek: 12 },
-];
-const totalWeight = plannedAssessments.reduce((sum, a) => sum + a.weight, 0);
+// The real published schedule and assessment scheme, read from the content
+// collections rather than restated here — this page is a view over that
+// data, not a second source of truth for it.
+const lectures = (await getPublishedCollection("lectures")).sort((a, b) => a.data.week - b.data.week);
+const assessments = (await getPublishedCollection("assessments")).sort((a, b) => a.data.week - b.data.week);
+const totalWeight = assessments.reduce((sum, a) => sum + a.data.weight, 0);
 ---
 
 <ContentLayout
   title={`${courseMeta.code}: ${courseMeta.title}`}
   description={courseMeta.description}
+  heroImage="/src/assets/images/banners/home.svg"
+  heroImageAlt="Abstract queue-tick and clock banner for SLOP4787, The Science of Waiting"
   {...siteConfig}
 >
+  <p class="thesis">Waiting is an experience, not merely a duration.</p>
+
+  <PhaseTracker />
+
   <ul class="course-tags" aria-label="Course tags">
     {courseMeta.tags.map((tag) => <li>{tag}</li>)}
   </ul>
-
-  <p class="thesis">Waiting is an experience, not merely a duration.</p>
 
   <h2>Course at a glance</h2>
   <dl class="at-a-glance">
@@ -127,60 +115,20 @@ const totalWeight = plannedAssessments.reduce((sum, a) => sum + a.weight, 0);
     different; treat it as ten angles worth checking, not ten laws.
   </p>
 
-  <h2>The course journey</h2>
-  <p class="phase-line">Measure → Explain → Analyse → Experiment → Audit</p>
+  <h2>The 12-week timeline</h2>
   <p>
-    The whole semester before you have to open each week's page individually:
+    The whole semester, week by week, in the order it's taught — open any
+    week directly from here rather than waiting for it to come up.
   </p>
-  <table class="schedule">
-    <thead>
-      <tr>
-        <th scope="col">Week</th>
-        <th scope="col">Title</th>
-        <th scope="col">Phase</th>
-      </tr>
-    </thead>
-    <tbody>
-      {weeklySchedule.map((w) => (
-        <tr>
-          <td>{w.week}</td>
-          <td>
-            {w.week === 1 ? <a href={withBase("/lectures/week-01/")}>{w.title}</a> : w.title}
-          </td>
-          <td>{w.phase}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
+  <CourseTimeline lectures={lectures} assessments={assessments} />
 
-  <h2>Assessment overview</h2>
-  <table class="assessment-overview">
-    <thead>
-      <tr>
-        <th scope="col">Assessment</th>
-        <th scope="col">Weight</th>
-        <th scope="col">Due</th>
-      </tr>
-    </thead>
-    <tbody>
-      {plannedAssessments.map((a) => (
-        <tr>
-          <td>{a.name}</td>
-          <td>{a.weight}%</td>
-          <td>Week {a.dueWeek}</td>
-        </tr>
-      ))}
-      <tr class="total-row">
-        <td>Total</td>
-        <td>{totalWeight}%</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h2>Assessment progression</h2>
   <p>
-    These are the semester's fixed weightings; each brief is published in
-    full as its week is reached.
+    Field Notes, Case Study, Experiment and Audit, in the order they're due —
+    each one built on the weeks (and the assessment) before it.
   </p>
+  <AssessmentTracker assessments={assessments} />
+  <p class="assessment-total">Total: {totalWeight}% across the semester.</p>
 
   <h2>Who it is for</h2>
   <p>
@@ -231,7 +179,7 @@ const totalWeight = plannedAssessments.reduce((sum, a) => sum + a.weight, 0);
     color: var(--at-text-secondary);
     border-left: 3px solid var(--at-bg-alt);
     padding-inline-start: 1rem;
-    margin-block-end: 2rem;
+    margin-block-end: 1.5rem;
   }
 
   .at-a-glance {
@@ -250,30 +198,8 @@ const totalWeight = plannedAssessments.reduce((sum, a) => sum + a.weight, 0);
     margin: 0;
   }
 
-  .phase-line {
+  .assessment-total {
     font-weight: 600;
-    letter-spacing: 0.02em;
-  }
-
-  table.schedule,
-  table.assessment-overview {
-    width: 100%;
-    border-collapse: collapse;
-    margin-block-end: 1rem;
-  }
-
-  table.schedule th,
-  table.schedule td,
-  table.assessment-overview th,
-  table.assessment-overview td {
-    padding: 0.4rem 0.6rem;
-    text-align: left;
-    border-bottom: 1px solid var(--at-bg-alt);
-  }
-
-  table.assessment-overview .total-row td {
-    font-weight: 600;
-    border-top: 2px solid var(--at-text-secondary);
-    border-bottom: none;
+    color: var(--at-text-secondary);
   }
 </style>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="1600" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6efe4"/>
+      <stop offset="1" stop-color="#e9dbc2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="500" fill="url(#bg)"/>
+<g><line x1="120" y1="300" x2="120" y2="328" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/><line x1="166" y1="300" x2="166" y2="328" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/><line x1="212" y1="300" x2="212" y2="328" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/><line x1="258" y1="300" x2="258" y2="328" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/><line x1="304" y1="300" x2="304" y2="328" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/><line x1="350" y1="300" x2="350" y2="328" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/><line x1="396" y1="300" x2="396" y2="346" stroke="#b97d1c" stroke-width="5" stroke-linecap="round" opacity="1"/><line x1="442" y1="300" x2="442" y2="328" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/><line x1="488" y1="300" x2="488" y2="328" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/></g>
+<g fill="none" stroke-linecap="round">
+    <circle cx="1180" cy="190" r="90" stroke="#6b6154" stroke-width="2.5" opacity="0.5"/>
+    <line x1="1180" y1="190" x2="1214.4" y2="219.0" stroke="#b97d1c" stroke-width="4"/>
+    <line x1="1180" y1="190" x2="1110.1" y2="207.2" stroke="#8a5c13" stroke-width="3"/>
+    <circle cx="1180" cy="190" r="4" fill="#8a5c13"/>
+  </g>
+<g>
+    <rect x="760" y="380" width="420" height="14" rx="7" fill="none" stroke="#6b6154" stroke-width="2.5" opacity="0.55"/>
+    <rect x="760" y="380" width="168.0" height="14" rx="7" fill="#b97d1c"/>
+  </g>
+<g stroke="#6b6154" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M 1360 112 L 1360 90 L 1382 90"/>
+    <path d="M 1498 90 L 1520 90 L 1520 112"/>
+    <path d="M 1520 228 L 1520 250 L 1498 250"/>
+    <path d="M 1382 250 L 1360 250 L 1360 228"/>
+  </g>
+</svg>

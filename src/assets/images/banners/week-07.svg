@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="1600" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6efe4"/>
+      <stop offset="1" stop-color="#e9dbc2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="500" fill="url(#bg)"/>
+<g fill="none" stroke-linecap="round">
+    <circle cx="140" cy="293.4899451676756" r="73.26496017165482" stroke="#6b6154" stroke-width="2.5" opacity="0.5"/>
+    <line x1="140" y1="293.4899451676756" x2="114.1" y2="267.6" stroke="#b97d1c" stroke-width="4"/>
+    <line x1="140" y1="293.4899451676756" x2="197.9" y2="284.4" stroke="#8a5c13" stroke-width="3"/>
+    <circle cx="140" cy="293.4899451676756" r="4" fill="#8a5c13"/>
+  </g>
+<g>
+    <circle cx="580" cy="315.6205051019788" r="65.81341065838933" fill="none" stroke="#b97d1c" stroke-width="3"/>
+    <text x="580" y="322.6205051019788" font-family="ui-monospace, monospace" font-size="22" fill="#b97d1c" text-anchor="middle">$</text>
+  </g>
+<g><line x1="860" y1="340" x2="860" y2="368" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/><line x1="900" y1="340" x2="900" y2="368" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/><line x1="940" y1="340" x2="940" y2="368" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/><line x1="980" y1="340" x2="980" y2="368" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/><line x1="1020" y1="340" x2="1020" y2="368" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/><line x1="1060" y1="340" x2="1060" y2="386" stroke="#b97d1c" stroke-width="5" stroke-linecap="round" opacity="1"/><line x1="1100" y1="340" x2="1100" y2="368" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/></g>
+<g fill="none" stroke-width="3">
+    <circle cx="1422.2" cy="304.82033878099173" r="60" stroke="#b97d1c" opacity="0.85"/>
+    <circle cx="1497.8" cy="304.82033878099173" r="60" stroke="#8a5c13" opacity="0.85"/>
+  </g>
+</svg>

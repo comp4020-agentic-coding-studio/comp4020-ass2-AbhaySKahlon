@@ -4,9 +4,17 @@ description:
   "Every piece of graded work in the course, what it is worth, and when it is
   due."
 heroTitle: Assessment
+heroImage: /src/assets/images/banners/assessments.svg
+heroImageAlt: Abstract four-stage assessment banner
 ---
 
 import AssessmentsGrid from "../../components/AssessmentsGrid.astro";
+import AssessmentTracker from "../../components/AssessmentTracker.astro";
+import CourseBanner from "../../components/CourseBanner.astro";
+
+<CourseBanner title="Assessment" eyebrow="SLOP4787 · The Science of Waiting" />
+
+<AssessmentTracker />
 
 Weights should sum to 100.
 
