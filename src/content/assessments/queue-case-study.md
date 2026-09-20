@@ -98,6 +98,13 @@ a website's stated options, your own non-identifying notes on how a queue
 actually behaved. Don't interview staff or customers; nothing in this
 course's existing rules extends that permission to this assessment.
 
+**Choosing your system:** choose your system with the later Waiting Audit
+in mind: the Audit will normally revisit this same system using the
+course's complete ten-mechanism toolkit. Your system does not need to
+exhibit all ten mechanisms, but it should provide enough observable or
+documentable features for meaningful whole-system analysis later in the
+course.
+
 ## The five mechanisms
 
 You don't need five equal-length sections. Structure the analysis however
