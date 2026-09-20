@@ -6,18 +6,17 @@
     </linearGradient>
   </defs>
   <rect width="1600" height="500" fill="url(#bg)"/>
-<g>
-    <rect x="-40" y="380" width="360" height="14" rx="7" fill="none" stroke="#6b6154" stroke-width="2.5" opacity="0.55"/>
-    <rect x="-40" y="380" width="172.4" height="14" rx="7" fill="#b97d1c"/>
+  <g stroke="#6b6154" stroke-width="2" opacity="0.22"><line x1="96" y1="440" x2="96" y2="450"/><line x1="154" y1="440" x2="154" y2="450"/><line x1="212" y1="440" x2="212" y2="450"/><line x1="270" y1="440" x2="270" y2="450"/><line x1="328" y1="440" x2="328" y2="450"/><line x1="386" y1="440" x2="386" y2="450"/><line x1="444" y1="440" x2="444" y2="450"/><line x1="502" y1="440" x2="502" y2="450"/><line x1="560" y1="440" x2="560" y2="450"/><line x1="618" y1="440" x2="618" y2="450"/><line x1="676" y1="440" x2="676" y2="450"/><line x1="734" y1="440" x2="734" y2="450"/><line x1="792" y1="440" x2="792" y2="450"/><line x1="850" y1="440" x2="850" y2="450"/><line x1="908" y1="440" x2="908" y2="450"/><line x1="966" y1="440" x2="966" y2="450"/><line x1="1024" y1="440" x2="1024" y2="450"/><line x1="1082" y1="440" x2="1082" y2="450"/><line x1="1140" y1="440" x2="1140" y2="450"/><line x1="1198" y1="440" x2="1198" y2="450"/><line x1="1256" y1="440" x2="1256" y2="450"/><line x1="1314" y1="440" x2="1314" y2="450"/><line x1="1372" y1="440" x2="1372" y2="450"/><line x1="1430" y1="440" x2="1430" y2="450"/><line x1="1488" y1="440" x2="1488" y2="450"/></g>
+  <g stroke="#6b6154" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.55">
+    <path d="M 40 68 L 40 40 L 68 40"/>
+    <path d="M 1532 460 L 1560 460 L 1560 432"/>
   </g>
-<g stroke="#6b6154" stroke-width="3" fill="none" stroke-linecap="round">
-    <path d="M 700 222.1484979270026 L 700 200.1484979270026 L 722 200.1484979270026"/>
-    <path d="M 878 200.1484979270026 L 900 200.1484979270026 L 900 222.1484979270026"/>
-    <path d="M 900 378.1484979270026 L 900 400.1484979270026 L 878 400.1484979270026"/>
-    <path d="M 722 400.1484979270026 L 700 400.1484979270026 L 700 378.1484979270026"/>
-  </g>
-<g>
-    <rect x="1370" y="230.62182260211557" width="180" height="120" rx="10" fill="none" stroke="#8a5c13" stroke-width="3" stroke-dasharray="1 9" stroke-linecap="round"/>
-    <text x="1460" y="298.62182260211557" font-family="ui-monospace, monospace" font-size="26" fill="#8a5c13" text-anchor="middle">02</text>
-  </g>
+  <text x="40" y="478" font-family="ui-monospace, monospace" font-size="20" letter-spacing="0.12em" fill="#8a5c13" opacity="0.85">WEEK 02 · ATTENTION</text>
+<g><circle cx="800" cy="230" r="156.0" fill="none" stroke="#b97d1c" stroke-width="2.5" stroke-dasharray="3 10" opacity="0.75"/><g>
+    <circle cx="800" cy="230" r="130" fill="none" stroke="#6b6154" stroke-width="3" opacity="0.55"/>
+    <line x1="800.0" y1="110.0" x2="800.0" y2="100.0" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/><line x1="860.0" y1="126.1" x2="865.0" y2="117.4" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/><line x1="903.9" y1="170.0" x2="912.6" y2="165.0" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/><line x1="920.0" y1="230.0" x2="930.0" y2="230.0" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/><line x1="903.9" y1="290.0" x2="912.6" y2="295.0" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/><line x1="860.0" y1="333.9" x2="865.0" y2="342.6" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/><line x1="800.0" y1="350.0" x2="800.0" y2="360.0" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/><line x1="740.0" y1="333.9" x2="735.0" y2="342.6" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/><line x1="696.1" y1="290.0" x2="687.4" y2="295.0" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/><line x1="680.0" y1="230.0" x2="670.0" y2="230.0" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/><line x1="696.1" y1="170.0" x2="687.4" y2="165.0" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/><line x1="740.0" y1="126.1" x2="735.0" y2="117.4" stroke="#6b6154" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="800" y1="230" x2="809.7" y2="165.7" stroke="#b97d1c" stroke-width="6" stroke-linecap="round"/>
+    <line x1="800" y1="230" x2="855.0" y2="321.3" stroke="#8a5c13" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="800" cy="230" r="5" fill="#8a5c13"/>
+  </g></g>
 </svg>

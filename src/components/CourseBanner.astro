@@ -32,11 +32,20 @@ const hasMeta = weekNumber !== undefined || mechanism !== undefined || date !== 
     <div class="course-banner" aria-label={`${title} overview`}>
       {eyebrow && <p class="course-banner-eyebrow">{eyebrow}</p>}
       {hasMeta && (
-        <ul class="course-banner-meta">
-          {weekNumber !== undefined && <li>Week {weekNumber} of 12</li>}
-          {mechanism && <li class="course-banner-mechanism">{mechanism}</li>}
-          {date && <li>{formatCourseDate(date)}</li>}
-        </ul>
+        <p class="course-banner-meta">
+          {[
+            weekNumber !== undefined ? `Week ${weekNumber} of 12` : null,
+            mechanism,
+            date ? formatCourseDate(date) : null,
+          ]
+            .filter((part): part is string => Boolean(part))
+            .map((part, i) => (
+              <>
+                {i > 0 && " · "}
+                <span class:list={[{ "course-banner-mechanism": part === mechanism }]}>{part}</span>
+              </>
+            ))}
+        </p>
       )}
     </div>
   )
@@ -57,25 +66,13 @@ const hasMeta = weekNumber !== undefined || mechanism !== undefined || date !== 
   }
 
   .course-banner-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem 0.75rem;
     margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .course-banner-meta li {
-    padding: 0.2rem 0.75rem;
-    border-radius: 999px;
-    background: var(--at-bg-alt);
     color: var(--at-text-secondary);
     font-size: var(--at-font-size-sm);
     font-weight: 600;
   }
 
   .course-banner-mechanism {
-    background: color-mix(in oklch, var(--at-primary) 16%, var(--at-bg-alt));
     color: var(--at-heading);
   }
 </style>

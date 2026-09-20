@@ -41,23 +41,18 @@ const teachingPeriod = `${dateFormatter.format(new Date(courseMeta.startDate))} 
 // data, not a second source of truth for it.
 const lectures = (await getPublishedCollection("lectures")).sort((a, b) => a.data.week - b.data.week);
 const assessments = (await getPublishedCollection("assessments")).sort((a, b) => a.data.week - b.data.week);
-const totalWeight = assessments.reduce((sum, a) => sum + a.data.weight, 0);
 ---
 
 <ContentLayout
   title={`${courseMeta.code}: ${courseMeta.title}`}
   description={courseMeta.description}
   heroImage="/src/assets/images/banners/home.svg"
-  heroImageAlt="Abstract queue-tick and clock banner for SLOP4787, The Science of Waiting"
+  heroImageAlt="Clock, queue-tick strip and observation-frame motif for SLOP4787, The Science of Waiting"
   {...siteConfig}
 >
   <p class="thesis">Waiting is an experience, not merely a duration.</p>
 
   <PhaseTracker />
-
-  <ul class="course-tags" aria-label="Course tags">
-    {courseMeta.tags.map((tag) => <li>{tag}</li>)}
-  </ul>
 
   <h2>Course at a glance</h2>
   <dl class="at-a-glance">
@@ -124,11 +119,10 @@ const totalWeight = assessments.reduce((sum, a) => sum + a.data.weight, 0);
 
   <h2>Assessment progression</h2>
   <p>
-    Field Notes, Case Study, Experiment and Audit, in the order they're due —
-    each one built on the weeks (and the assessment) before it.
+    Four assessments move from personal observation to analysis, experimentation
+    and whole-system audit.
   </p>
   <AssessmentTracker assessments={assessments} />
-  <p class="assessment-total">Total: {totalWeight}% across the semester.</p>
 
   <h2>Who it is for</h2>
   <p>
@@ -156,23 +150,6 @@ const totalWeight = assessments.reduce((sum, a) => sum + a.data.weight, 0);
 </ContentLayout>
 
 <style>
-  .course-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-block: 0 2rem;
-    padding: 0;
-    list-style: none;
-  }
-
-  .course-tags li {
-    padding: 0.25rem 0.65rem;
-    border-radius: 999px;
-    color: var(--at-text-secondary);
-    background: var(--at-bg-alt);
-    font-size: 0.9rem;
-  }
-
   .thesis {
     font-size: 1.25rem;
     font-style: italic;
@@ -196,10 +173,5 @@ const totalWeight = assessments.reduce((sum, a) => sum + a.data.weight, 0);
 
   .at-a-glance dd {
     margin: 0;
-  }
-
-  .assessment-total {
-    font-weight: 600;
-    color: var(--at-text-secondary);
   }
 </style>

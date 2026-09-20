@@ -26,7 +26,7 @@ const mechanism = lecture.data.tags[0];
   title={title}
   description={lecture.data.description}
   heroImage={`/src/assets/images/banners/week-${weekSlug}.svg`}
-  heroImageAlt={`Abstract waiting-mechanism banner for Week ${lecture.data.week}`}
+  heroImageAlt={`Banner for Week ${lecture.data.week}, ${lecture.data.title}, depicting the ${mechanism.replace("-", " ")} mechanism`}
   {...siteConfig}
 >
   <CourseBanner title={title} eyebrow="SLOP4787 · The Science of Waiting" date={lecture.data.date} />

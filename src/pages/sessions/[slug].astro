@@ -25,7 +25,7 @@ const mechanism = session.data.tags[0];
   title={title}
   description={session.data.description}
   heroImage={`/src/assets/images/banners/week-${weekSlug}.svg`}
-  heroImageAlt={`Abstract waiting-mechanism banner for Week ${session.data.week}`}
+  heroImageAlt={`Banner for Week ${session.data.week}, ${session.data.title}, depicting the ${mechanism.replace("-", " ")} mechanism`}
   {...siteConfig}
 >
   <CourseBanner title={title} eyebrow="SLOP4787 · The Science of Waiting" date={session.data.date} />
